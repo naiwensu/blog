@@ -1,0 +1,2170 @@
+[ 2017-07-16T23:33:59+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.097324s][吞吐率：10.27req/s] [内存消耗：1,768.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:34:00+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.045201s][吞吐率：22.12req/s] [内存消耗：1,629.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:34:01+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042762s][吞吐率：23.39req/s] [内存消耗：1,629.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:34:03+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.035844s][吞吐率：27.90req/s] [内存消耗：1,629.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:34:51+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.053193s][吞吐率：18.80req/s] [内存消耗：1,811.69kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant PATH_INFO - assumed 'PATH_INFO'[D:\phpStudy\WWW\blog\runtime\temp\2598bfb0d441c92cffb601dc99b868c8.php:9]
+
+---------------------------------------------------------------
+[ 2017-07-16T23:34:55+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.047002s][吞吐率：21.28req/s] [内存消耗：1,673.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant PATH_INFO - assumed 'PATH_INFO'[D:\phpStudy\WWW\blog\runtime\temp\2598bfb0d441c92cffb601dc99b868c8.php:9]
+
+---------------------------------------------------------------
+[ 2017-07-16T23:35:32+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.043406s][吞吐率：23.04req/s] [内存消耗：1,768.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:35:34+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.035296s][吞吐率：28.33req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:35:53+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039218s][吞吐率：25.50req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:36:10+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041468s][吞吐率：24.11req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:36:11+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038692s][吞吐率：25.85req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:36:11+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037151s][吞吐率：26.92req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:36:11+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042217s][吞吐率：23.69req/s] [内存消耗：1,629.96kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:37:29+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041850s][吞吐率：23.89req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:37:31+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039726s][吞吐率：25.17req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:38:32+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041094s][吞吐率：24.33req/s] [内存消耗：1,768.54kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:38:47+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037323s][吞吐率：26.79req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:38:47+08:00 ] ::1 ::1 GET /blog/public/APP_PATH
+[ log ] localhost/blog/public/APP_PATH [运行时间：0.033340s][吞吐率：29.99req/s] [内存消耗：1,384.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'APP_PATH',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/blog/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:03+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041315s][吞吐率：24.20req/s] [内存消耗：1,768.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:10+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.044099s][吞吐率：22.68req/s] [内存消耗：1,768.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:11+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038806s][吞吐率：25.77req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:11+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041732s][吞吐率：23.96req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:12+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039590s][吞吐率：25.26req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:12+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040212s][吞吐率：24.87req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:40+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040311s][吞吐率：24.81req/s] [内存消耗：1,768.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:41+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040315s][吞吐率：24.80req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:41+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038043s][吞吐率：26.29req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:41+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042218s][吞吐率：23.69req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:41+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040425s][吞吐率：24.74req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:41+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039861s][吞吐率：25.09req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:43+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.045080s][吞吐率：22.18req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:45+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.036552s][吞吐率：27.36req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:52+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037812s][吞吐率：26.45req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:53+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.036689s][吞吐率：27.26req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:39:53+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038513s][吞吐率：25.97req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:14+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041590s][吞吐率：24.04req/s] [内存消耗：1,768.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.035089s][吞吐率：28.50req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037202s][吞吐率：26.88req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042569s][吞吐率：23.49req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:17+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.034205s][吞吐率：29.24req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:27+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042597s][吞吐率：23.48req/s] [内存消耗：1,768.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:29+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041081s][吞吐率：24.34req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:30+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.036323s][吞吐率：27.53req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:30+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037860s][吞吐率：26.41req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:30+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.043528s][吞吐率：22.97req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:40:39+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.051988s][吞吐率：19.24req/s] [内存消耗：1,812.05kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant A1PP_PATH - assumed 'A1PP_PATH'[D:\phpStudy\WWW\blog\runtime\temp\2598bfb0d441c92cffb601dc99b868c8.php:9]
+
+---------------------------------------------------------------
+[ 2017-07-16T23:41:39+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040317s][吞吐率：24.80req/s] [内存消耗：1,768.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:42:14+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039985s][吞吐率：25.01req/s] [内存消耗：1,768.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:42:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040338s][吞吐率：24.79req/s] [内存消耗：1,630.33kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:42:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040088s][吞吐率：24.95req/s] [内存消耗：1,630.33kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:42:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.041525s][吞吐率：24.08req/s] [内存消耗：1,630.33kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:42:27+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042967s][吞吐率：23.27req/s] [内存消耗：1,768.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:43:51+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.044237s][吞吐率：22.61req/s] [内存消耗：1,768.44kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:43:53+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.043357s][吞吐率：23.06req/s] [内存消耗：1,630.32kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:43:53+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038112s][吞吐率：26.24req/s] [内存消耗：1,630.32kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:43:54+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040527s][吞吐率：24.67req/s] [内存消耗：1,630.32kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:43:54+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038020s][吞吐率：26.30req/s] [内存消耗：1,630.32kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:08+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.044670s][吞吐率：22.39req/s] [内存消耗：1,768.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:08+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037736s][吞吐率：26.50req/s] [内存消耗：1,630.34kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:08+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.043162s][吞吐率：23.17req/s] [内存消耗：1,630.34kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:08+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038989s][吞吐率：25.65req/s] [内存消耗：1,630.34kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:24+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.045172s][吞吐率：22.14req/s] [内存消耗：1,768.44kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:25+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.036627s][吞吐率：27.30req/s] [内存消耗：1,630.31kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:44:25+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.036562s][吞吐率：27.35req/s] [内存消耗：1,630.31kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:15+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.039472s][吞吐率：25.33req/s] [内存消耗：1,768.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:16+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.037858s][吞吐率：26.41req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:17+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038677s][吞吐率：25.86req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:17+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.040779s][吞吐率：24.52req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:17+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.038809s][吞吐率：25.77req/s] [内存消耗：1,630.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-16T23:46:25+08:00 ] ::1 ::1 GET /blog/public/
+[ log ] localhost/blog/public/ [运行时间：0.042176s][吞吐率：23.71req/s] [内存消耗：1,768.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1955047424; province_id=1; city_id=2; district_id=3; PHPSESSID=ckut24ifknura073l8egugubp1; pgv_si=s7624048640; admin_type=1; workspaceParam=index%7CSystem',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\blog\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
