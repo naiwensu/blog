@@ -1,0 +1,16 @@
+{include file='index/common'}
+	<div class="right">
+		{volist name="userarticle" id="vo"}
+			<div>
+				<p style="color: red">标题：{$vo.title}</p>
+				<p style="color: red">标题：{$vo.content} <a href="deletearticle?title={$vo.title}">删除</a></p>
+				<hr>
+			</div>
+
+		{/volist}
+	</div>
+
+
+	</div>
+</body>
+</html>

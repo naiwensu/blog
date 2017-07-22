@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1500358952;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\phpStudy\WWW\blog\public/../app/index\view\index\searchtag.html";i:1500359524;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500354717;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
 	<!DOCTYPE html>
 <html>
 <head>
@@ -103,9 +102,9 @@
 <body>
 <div class="all">
 	<DIV class="index">
-		
+
 		<div class="user">
-			苏乃文的博客
+		苏乃文的博客
 		</div>
 
 		<div class="tit">

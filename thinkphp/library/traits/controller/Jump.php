@@ -34,15 +34,21 @@ trait Jump
      * @param array     $header 发送的Header信息
      * @return void
      */
-    protected function success($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
+    protected function success($msg = '', $url = null, $data = '', $wait = 1, array $header = [])
     {
         $code = 1;
         if (is_numeric($msg)) {
             $code = $msg;
             $msg  = '';
         }
-        if (is_null($url) && isset($_SERVER["HTTP_REFERER"])) {
+ /*       if (is_null($url) && isset($_SERVER["HTTP_REFERER"])) {
             $url = $_SERVER["HTTP_REFERER"];
+        } elseif ('' !== $url) {
+            $url = (strpos($url, '://') || 0 === strpos($url, '/')) ? $url : Url::build($url);
+        }
+        */
+        if (is_null($url)) {
+            $url = Request::instance()->isAjax() ? '' : 'javascript:history.back(-1);';
         } elseif ('' !== $url) {
             $url = (strpos($url, '://') || 0 === strpos($url, '/')) ? $url : Url::build($url);
         }
@@ -73,7 +79,7 @@ trait Jump
      * @param array     $header 发送的Header信息
      * @return void
      */
-    protected function error($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
+    protected function error($msg = '', $url = null, $data = '', $wait = 1, array $header = [])
     {
         $code = 0;
         if (is_numeric($msg)) {

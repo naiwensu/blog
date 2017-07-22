@@ -1,0 +1,14 @@
+{include file='index/common'}
+	<div class="right">
+		{volist name="allusers" id="vo"}
+			<div>
+				<p style="color: red">用户：<a href="getuserarticle?id={$vo.id}">{$vo.username}</a> <a href="deleteuser?username={$vo.username}">删除</a></p>
+			</div>
+
+		{/volist}
+	</div>
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{include file='index/common'}		
+
+		<div class="right">
+				<table align="left" width="400px" border="1" cellspacing="0">
+				<caption><h3>编辑文章</h3></caption>
+					<tr><th>文章标题</th><th>文章内容</th><th colspan="2">操作</th></tr>
+					{volist name="article" id="vo"}			
+						<tr><td align="center">{$vo.title}</td><td align="center">{$vo.content}</td><td align="center"><a href="doedit?title={$vo.title}">编辑</a></td><td align="center"><a href="delete?title={$vo.title}">删除</a></td></tr><br>
+					{/volist}
+				</table>
+				
+		</div>
+
+	</div>
+</body>
+</html>

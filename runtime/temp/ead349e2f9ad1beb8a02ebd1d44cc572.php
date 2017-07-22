@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1500358952;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\about.html";i:1500354320;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;}*/ ?>
 
 	<!DOCTYPE html>
 <html>
@@ -116,20 +116,15 @@
 			</ul>
 		</div>
 	</DIV>
-	<div align="center">
-	<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-		<div>
-			<p style="color: red"><?php echo $vo['title']; ?></p><br/>
-			<p style="color: red"><?php echo $vo['time']; ?></p><br/>
-			<p style="color: blue"><?php echo $vo['content']; ?></p><br/>
-			阅读全文<br>
+		<div class="about">
+			<p align="center">about</p><br>
+			<div align="center">
+				道可道，非常道。<br>
+				梦里可以御风而行，在天边漂流！<br>
+				知行合一。<br>
+				人间有味是清欢。<br>
+			</div>
 		</div>
-
-	<?php endforeach; endif; else: echo "" ;endif; ?>
 	</div>
-	<div class="footer">
-			yejiao 
-	</div>
-</div>
 </body>
 </html>
