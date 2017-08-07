@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1500358952;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1501311067;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
 
 	<!DOCTYPE html>
 <html>
@@ -120,7 +120,7 @@
 	<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 		<div>
 			<p style="color: red"><?php echo $vo['title']; ?></p><br/>
-			<p style="color: red"><?php echo $vo['time']; ?></p><br/>
+			<p style="color: red"><?php echo $vo['create_time']; ?></p><br/>
 			<p style="color: blue"><?php echo $vo['content']; ?></p><br/>
 			阅读全文<br>
 		</div>

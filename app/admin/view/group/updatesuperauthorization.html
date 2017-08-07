@@ -1,0 +1,27 @@
+{extend name="index/common" /}
+
+{block name="right"}
+	<div class="row clearfix">
+			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Group/doupdatesuperauthorization" method="post" role="form">
+					<label for="name" class="col-sm-offset-2"><h3>修改用户组名</h3></label><br>
+				  <div class="form-group">
+				    <label for="groupname" class=" col-sm-2 control-label">用户组名</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control" id="groupname" name="groupname" placeholder="请输入用户组名">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="description" class=" col-sm-2 control-label">用户组描述</label>
+				    <div class="col-sm-6">
+				      <textarea class="form-control" rows="4" name="description" placeholder="请输入用户组描述"></textarea>
+				    </div>
+				  </div>
+				  <input type="hidden" id="id" name="id" value="{$id}">
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" id="submit" class="btn btn-primary">提交</button>
+				    </div>
+				  </div>
+			</form>
+	</div>
+{/block}

@@ -1,0 +1,31 @@
+{extend name="index/common" /}
+
+{block name="right"}
+<div class="col-sm-7 column"  align="">
+<table class="table table-bordered"  >
+	  <caption><h1>编辑文章</h1></caption>
+	  <thead>
+	    <tr>
+	      <th>文章标题</th>
+	      <th>文章内容</th>
+	      <th>文章标签</th>
+	      <th colspan="2" >操作</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+		{volist name="article" id="vo"}			
+			<tr>
+				<td align="center">{$vo.title}</td>
+				{gt name="vo.content|strlen" value="30"}<td align="center">{$vo.content|substr=0,30}...</td>
+				{else/}
+				<td align="center">{$vo.content|rtrim}</td>
+				{/gt}
+				<td align="center">{$vo.tag}</td>
+				<td align="center"><a href="doedit?id={$vo.id}">编辑</a></td>
+				<td align="center"><a href="delete?id={$vo.id}">删除</a></td>
+			</tr>
+		{/volist}
+	  </tbody>
+	</table>
+</div>
+{/block}

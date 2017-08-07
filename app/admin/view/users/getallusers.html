@@ -1,0 +1,13 @@
+{extend name="index/common" /}
+
+{block name="right"}
+		{volist name="allusers" id="vo"}
+			<div>
+				用户名：{$vo.username}<br>
+				<a href="__ROOT__/Articles/getuserarticle?id={$vo.id}">{$vo.username}的所有文章</a><br>
+				<a href="deleteuser?username={$vo.username}">删除用户</a>
+			</div>
+
+		{/volist}
+		{$fenye}
+{/block}

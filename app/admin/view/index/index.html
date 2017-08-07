@@ -1,0 +1,14 @@
+{extend name="index/common" /}
+
+{block name="right"}
+		{volist name="article" id="vo"}
+			<div>
+				<p style="color: ">标题：{$vo.title}</p>
+				<p style="color: ">内容：{$vo.content}</p>
+				<p>发表时间：20{$vo.create_time|date="y-m-d",###}</p>
+				<p><a href="deletearticle?title={$vo.title}">删除</a></p>
+				<hr>
+			</div>
+
+		{/volist}
+{/block}

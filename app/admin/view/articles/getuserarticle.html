@@ -1,0 +1,13 @@
+{extend name="index/common" /}
+
+{block name="right"}
+		{volist name="userarticle" id="vo"}
+			<div>
+				<p style="color: ">标题：{$vo.title}</p>
+				<p style="color: ">内容：{$vo.content} <a href="__ROOT__/Articles/deletearticle?title={$vo.title}">删除</a></p>
+				<hr>
+			</div>
+
+		{/volist}
+		{$fenye}
+{/block}
