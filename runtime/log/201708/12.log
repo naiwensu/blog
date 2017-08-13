@@ -1,0 +1,1123 @@
+[ 2017-08-12T18:50:22+08:00 ] 127.0.0.1 127.0.0.1 GET /Group/authorization?gid=31&groupname=%E7%AE%A1%E7%90%86%E5%91%98
+[ log ] www.blog.cn/Group/authorization?gid=31&groupname=%E7%AE%A1%E7%90%86%E5%91%98 [运行时间：6.332691s][吞吐率：0.16req/s] [内存消耗：2,818.26kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Group',
+    2 => 'authorization',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'gid' => '31',
+  'groupname' => '管理员',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Group->authorization[ D:\phpStudy\WWW\blog\app\admin\controller\Group.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\group\authorization.html [ array (
+  0 => 'gid',
+  1 => 'groupname',
+  2 => 'aut',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.964101s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `module_menu` [ RunTime:0.161279s ]
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 0 [ RunTime:0.028720s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004723s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 1 [ RunTime:0.001349s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005919s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 2 [ RunTime:0.001225s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004764s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 3 [ RunTime:0.001286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005206s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 4 [ RunTime:0.001251s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005091s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 5 [ RunTime:0.001230s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004477s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 6 [ RunTime:0.000736s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002999s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 7 [ RunTime:0.000601s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002503s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 8 [ RunTime:0.000660s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002295s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 9 [ RunTime:0.000591s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002535s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 10 [ RunTime:0.000559s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002548s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 11 [ RunTime:0.000589s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002313s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`groupname`,`u`.`statue`,`m`.`controller`,`m`.`method`,`m`.`menu_name`,`m`.`id`,`m`.`module` FROM `module_menu` `m` INNER JOIN `user_role_priv` `u` ON `m`.`controller`=`u`.`controller` AND `m`.`method`=`u`.`method` WHERE  `u`.`groupname` = '管理员'  AND `m`.`parent_id` = 12 [ RunTime:0.000668s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:50:26+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.235735s][吞吐率：4.24req/s] [内存消耗：1,994.15kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/Group/authorization?gid=31&groupname=%E7%AE%A1%E7%90%86%E5%91%98',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:50:31+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.030948s][吞吐率：32.31req/s] [内存消耗：1,837.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:50:45+08:00 ] 127.0.0.1 127.0.0.1 POST /User/changeuser
+[ log ] www.blog.cn/User/changeuser [运行时间：0.505473s][吞吐率：1.98req/s] [内存消耗：2,489.03kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '54',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1234',
+  'newpassword' => '1234',
+  'confirmpassword' => '1234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002035s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.156147s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = '81dc9bdb52d04dc20036dbd8313ed055'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.009575s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001868s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'snw' LIMIT 1 [ RunTime:0.000423s ]
+[ error ] [1]Call to undefined method app\admin\controller\User::save()[D:\phpStudy\WWW\blog\app\admin\controller\User.php:46]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:50:48+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.036255s][吞吐率：27.58req/s] [内存消耗：1,837.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:51:00+08:00 ] 127.0.0.1 127.0.0.1 POST /User/changeuser
+[ log ] www.blog.cn/User/changeuser [运行时间：0.070320s][吞吐率：14.22req/s] [内存消耗：2,488.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1234',
+  'newpassword' => '',
+  'confirmpassword' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001967s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015653s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = '81dc9bdb52d04dc20036dbd8313ed055'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001806s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'snw' LIMIT 1 [ RunTime:0.000458s ]
+[ error ] [1]Call to undefined method app\admin\controller\User::save()[D:\phpStudy\WWW\blog\app\admin\controller\User.php:46]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:54:46+08:00 ] 127.0.0.1 127.0.0.1 POST /User/changeuser
+[ log ] www.blog.cn/User/changeuser [运行时间：0.364548s][吞吐率：2.74req/s] [内存消耗：2,866.92kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1234',
+  'newpassword' => '',
+  'confirmpassword' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002039s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.116884s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = '81dc9bdb52d04dc20036dbd8313ed055'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002309s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'snw' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002080s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `user`  SET `password`='d41d8cd98f00b204e9800998ecf8427e',`update_time`=1502535286  WHERE  `id` = 1 [ RunTime:0.018863s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:54:47+08:00 ] 127.0.0.1 127.0.0.1 GET /users/usermessage.html
+[ log ] www.blog.cn/users/usermessage.html [运行时间：0.077527s][吞吐率：12.90req/s] [内存消耗：1,482.19kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:04+08:00 ] 127.0.0.1 127.0.0.1 GET /users/usermessage.html
+[ log ] www.blog.cn/users/usermessage.html [运行时间：0.048592s][吞吐率：20.58req/s] [内存消耗：1,482.23kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:06+08:00 ] 127.0.0.1 127.0.0.1 GET /users/usermessage.html
+[ log ] www.blog.cn/users/usermessage.html [运行时间：0.027631s][吞吐率：36.19req/s] [内存消耗：1,482.28kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:14+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.038707s][吞吐率：25.84req/s] [内存消耗：1,837.05kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:25+08:00 ] 127.0.0.1 127.0.0.1 POST /user/changeuser
+[ log ] www.blog.cn/user/changeuser [运行时间：0.085618s][吞吐率：11.68req/s] [内存消耗：2,867.04kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/usermessage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '',
+  'newpassword' => '1234',
+  'confirmpassword' => '1234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001949s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022057s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001853s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'snw' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002100s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `user`  SET `password`='81dc9bdb52d04dc20036dbd8313ed055',`update_time`=1502535325  WHERE  `id` = 1 [ RunTime:0.000874s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:26+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.049317s][吞吐率：20.28req/s] [内存消耗：1,837.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:36+08:00 ] 127.0.0.1 127.0.0.1 POST /user/changeuser
+[ log ] www.blog.cn/user/changeuser [运行时间：0.167191s][吞吐率：5.98req/s] [内存消耗：2,440.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '51',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/usermessage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1',
+  'newpassword' => '1234',
+  'confirmpassword' => '1234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001797s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.122513s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = 'c4ca4238a0b923820dcc509a6f75849b'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000443s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:55:37+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.044708s][吞吐率：22.37req/s] [内存消耗：1,837.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:56:48+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.102913s][吞吐率：9.72req/s] [内存消耗：1,507.03kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected 'use' (T_USE)[D:\phpStudy\WWW\blog\app\admin\controller\User.php:44]
+
+---------------------------------------------------------------
+[ 2017-08-12T18:57:06+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.039050s][吞吐率：25.61req/s] [内存消耗：1,837.36kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T18:57:15+08:00 ] 127.0.0.1 127.0.0.1 POST /user/changeuser
+[ log ] www.blog.cn/user/changeuser [运行时间：0.186689s][吞吐率：5.36req/s] [内存消耗：2,466.26kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '54',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/usermessage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1234',
+  'newpassword' => '1234',
+  'confirmpassword' => '1234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002018s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.134520s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = '81dc9bdb52d04dc20036dbd8313ed055'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000441s ]
+[ error ] [1]Class 'app\admin\controller\app\admin\model\User' not found[D:\phpStudy\WWW\blog\app\admin\controller\User.php:44]
+
+---------------------------------------------------------------
+[ 2017-08-12T19:02:55+08:00 ] 127.0.0.1 127.0.0.1 POST /user/changeuser
+[ log ] www.blog.cn/user/changeuser [运行时间：0.086487s][吞吐率：11.56req/s] [内存消耗：2,867.00kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'changeuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '54',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.blog.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/usermessage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'oldpassword' => '1234',
+  'newpassword' => '1234',
+  'confirmpassword' => '1234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->changeuser[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002228s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.021522s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `password` = '81dc9bdb52d04dc20036dbd8313ed055'  AND `username` = 'snw' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001921s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'snw' LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001857s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `user`  SET `password`='81dc9bdb52d04dc20036dbd8313ed055',`update_time`=1502535775  WHERE  `id` = 1 [ RunTime:0.000524s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T19:02:56+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.051106s][吞吐率：19.57req/s] [内存消耗：1,837.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T20:27:28+08:00 ] 127.0.0.1 127.0.0.1 GET /user/usermessage.html
+[ log ] www.blog.cn/user/usermessage.html [运行时间：0.040381s][吞吐率：24.76req/s] [内存消耗：1,837.27kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'usermessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/changeuser',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->usermessage[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T21:08:17+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.039421s][吞吐率：25.37req/s] [内存消耗：1,837.13kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/user/usermessage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T21:08:22+08:00 ] 127.0.0.1 127.0.0.1 GET /Index/index
+[ log ] www.blog.cn/Index/index [运行时间：0.358910s][吞吐率：2.79req/s] [内存消耗：2,484.70kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\blog\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\index\index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003871s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.149849s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.078019s ]
+
+---------------------------------------------------------------
+[ 2017-08-12T21:08:25+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.029832s][吞吐率：33.52req/s] [内存消耗：1,837.07kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-12T21:08:30+08:00 ] 127.0.0.1 127.0.0.1 GET /User/user
+[ log ] www.blog.cn/User/user [运行时间：0.033656s][吞吐率：29.71req/s] [内存消耗：1,837.04kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\blog\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.blog.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.blog.cn/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; cn=0; PHPSESSID=o4kjsglllupspsdtuqmvmiecc7; province_id=1; city_id=2; district_id=3; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ D:\phpStudy\WWW\blog\app\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\blog\public/../app/admin\view\user\usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

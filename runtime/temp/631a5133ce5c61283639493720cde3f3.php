@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\tags\addtags.html";i:1502159474;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,27 +112,65 @@
 
 			<div style="margin-top: 20px;height: 500px;background: white" align="center">
 				<img src="__ROOT__/static/image/xq.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="110" style="margin-top: 30px"><br>
-				<h3>{$Think.session.username}<br><small>我的目标很明确！</small></h3><br>
+				<h3><?php echo \think\Session::get('username'); ?><br><small>我的目标很明确！</small></h3><br>
 				<a class="btn btn-default btn-xs" href="https://github.com/naiwensu" role="button"><img src="__ROOT__/static/image/github.png" class="img-.img-rounded" alt="github" width="30px" height="30px">github</a>
 			</div>
 		</div>
 
 		<div class="col-sm-9 column" style="background:#BFBFBF">
-		{block name="right"}			
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				 <a class="btn" href="#">View details »</a>
-			</p>		
-		{/block}
+		
+			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Tags/doaddtags" method="post" role="form">
+				  <div class="form-group">
+				    <label for="tagname" class=" col-sm-2 control-label">标签名</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control" id="tagname" name="tagname" placeholder="请输入标签名">
+				    </div>
+				  </div>				  								 
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" id="submit" disabled="disabled" class="btn btn-primary">提交</button>
+				    </div>
+				  </div>	  
+			</form>
+
 		</div>
 	</div>	
 </div>
-{block name="js"}{/block}
+
+	<script>
+			$(function(){
+				$("#tagname").blur(function(){
+					if(! $("#tagname").val().length>0 ){
+						if(!$("#tagname1").length>0){
+							if ($('#tmessage').length>0) {
+								$('#tmessage').remove();
+							}
+							$("#tagname").after('<p id="tagname1" style="color:red">请输入标签名！</p>');
+						}
+						$("#submit").attr("disabled","disabled");	
+						//alert('aaa');																		
+					}else{
+						$('#tagname1').remove();
+						var tagname=$(this).val();
+						$.get('__ROOT__/Tags/check',{'tagname':tagname},function(data){
+							if(data=='0'){
+									$("#submit").attr("disabled","disabled");
+
+									if(!$("#tmessage").length>0){
+										$("#tagname").after('<p id="tmessage" style="color:red">该标签已存在</p>');
+									}
+							}else{
+								$('#tmessage').remove();
+								$('#submit').removeAttr('disabled');
+							//alert('aaa');							
+							}
+						});
+					}			
+				});
+					
+		});		
+	</script>
+
 </body>
 
 <footer style="height: 50px;background:#DFDFDF ;bottom: 0px;text-align: center;padding-top: 15px">

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\phpStudy\WWW\blog\public/../app/admin\view\tags\tagarticle.html";i:1502190025;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,27 +112,29 @@
 
 			<div style="margin-top: 20px;height: 500px;background: white" align="center">
 				<img src="__ROOT__/static/image/xq.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="110" style="margin-top: 30px"><br>
-				<h3>{$Think.session.username}<br><small>我的目标很明确！</small></h3><br>
+				<h3><?php echo \think\Session::get('username'); ?><br><small>我的目标很明确！</small></h3><br>
 				<a class="btn btn-default btn-xs" href="https://github.com/naiwensu" role="button"><img src="__ROOT__/static/image/github.png" class="img-.img-rounded" alt="github" width="30px" height="30px">github</a>
 			</div>
 		</div>
 
 		<div class="col-sm-9 column" style="background:#BFBFBF">
-		{block name="right"}			
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				 <a class="btn" href="#">View details »</a>
-			</p>		
-		{/block}
+		
+		<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+			<div>
+				<p style="color: ">标题：<?php echo $vo['title']; ?></p>
+				<p style="color: ">内容：<?php echo $vo['content']; ?></p>
+				<p>作者：<?php echo $vo['author']; ?></p>
+				<p>发表时间：20<?php echo date("y-m-d",$vo['create_time']); ?></p>
+				<p><a href="__ROOT__/Articles/deltagarticles?id=<?php echo $vo['id']; ?>&tag=<?php echo $vo['tag']; ?>">删除</a></p>
+				<hr>
+			</div>
+
+		<?php endforeach; endif; else: echo "" ;endif; ?>
+
 		</div>
 	</div>	
 </div>
-{block name="js"}{/block}
+
 </body>
 
 <footer style="height: 50px;background:#DFDFDF ;bottom: 0px;text-align: center;padding-top: 15px">

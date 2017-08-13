@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\addgroup.html";i:1501918900;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1501920527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\addgroup.html";i:1502191554;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,10 +63,15 @@
 		<div class="col-sm-3 column" style="background: black">
 			<div style="background: #BFBFBF">
 				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a href="index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				  	<li><a href="__ROOT__/Index/user"><span class="glyphicon glyphicon-user"></span>用户信息</a></li>
-				  	<li><a href="__ROOT__/Index/publish"><span class="glyphicon glyphicon-upload"></span>发表文章</a></li>
-				  	<li><a href="__ROOT__/Index/edit"><span class="glyphicon glyphicon-edit"></span>编辑文章</a></li>
+					<li class="active"><a href="__ROOT__/Index/index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+				  	<li><a href="__ROOT__/User/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
+					<li data-toggle="collapse" data-target="#article" >
+							<a href="#"><span class="glyphicon glyphicon-book"></span>处理文章<b class="caret"></b></a>
+					</li>
+					<ul id="article" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Articles/publish">&nbsp;&nbsp;<span class="glyphicon glyphicon-upload"></span>发表文章</a></li>
+						  	<li><a href="__ROOT__/Articles/edit">&nbsp;&nbsp;<span class="glyphicon glyphicon-edit"></span>编辑文章</a></li>
+				  	</ul>
 <!--					<li class="dropdown">
 		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		                    <span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b>
@@ -76,13 +81,20 @@
 		                    <li><a href="getallusers"><span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 		                </ul>
 	            	</li>
--->	            	
+-->	
+					<li data-toggle="collapse" data-target="#tags" >
+							<a href="#"><span class="glyphicon glyphicon-tag"></span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签<b class="caret"></b></a>
+					</li>
+					<ul id="tags" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Tags/getalltags">&nbsp;&nbsp;<span class="glyphicon glyphicon-tags"></span>所有标签</a></li>
+						  	<li><a href="__ROOT__/Tags/addtags">&nbsp;&nbsp;<span class="glyphicon glyphicon-ok-circle"></span>添加标签</a></li>
+				  	</ul>            	
 					<li data-toggle="collapse" data-target="#ceshi" >
 							<a href="#"><span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b></a>
 					</li>
 					<ul id="ceshi" id="collapseThree" class="nav panel-collapse collapse">
-		                    <li><a href="__ROOT__/Index/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
-		                    <li><a href="__ROOT__/Index/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
+		                    <li><a href="__ROOT__/User/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
+		                    <li><a href="__ROOT__/User/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 					</ul>
 
 					<li data-toggle="collapse" data-target="#quanxian" >
@@ -109,20 +121,20 @@
 		
 			<form class="form-horizontal" style="background: #BFBFBF"  action="doaddgroup" method="post" role="form">
 				  <div class="form-group">
-				    <label for="title" class=" col-sm-2 control-label">用户组名</label>
+				    <label for="groupname" class=" col-sm-2 control-label">用户组名</label>
 				    <div class="col-sm-6">
 				      <input type="text" class="form-control" id="groupname" name="groupname" placeholder="请输入用户组名">
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="content" class=" col-sm-2 control-label" >用户组描述</label>
+				    <label for="description" class=" col-sm-2 control-label" >用户组描述</label>
 				    <div class="col-sm-6">
 				      	<textarea class="form-control" rows="4" name="description" placeholder="请输入用户组描述"></textarea>
 				    </div>
 				  </div>				  								 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn btn-primary">提交</button>
+				      <button type="submit" id="submit" disabled="disabled" class="btn btn-primary">提交</button>
 				    </div>
 				  </div>	  
 			</form>
@@ -130,6 +142,37 @@
 		</div>
 	</div>	
 </div>
+
+	<script>
+			$(function(){
+				$("#groupname").blur(function(){
+					if(! $("#groupname").val().length>0 ){
+						if(!$("#groupname1").length>0){
+							$('#gmessage').remove();
+							$("#groupname").after('<p id="groupname1" style="color:red">请输入用户组名！</p>');
+						}
+						$("#submit").attr("disabled","disabled");	
+						//alert('aaa');																		
+					}else{
+						$('#groupname1').remove();
+						var groupname=$(this).val();
+						$.get('__ROOT__/Group/check',{'groupname':groupname},function(data){
+							if(data=='0'){
+									$("#submit").attr("disabled","disabled");
+									if(!$("#gmessage").length>0){
+										$("#groupname").after('<p id="gmessage" style="color:red">该用户组已经存在</p>');
+									}
+							}else{
+								$('#gmessage').remove();
+								$("#submit").removeAttr("disabled");
+							//alert('aaa');							
+							}
+						});
+					}			
+				});
+
+		});		
+	</script>
 
 </body>
 

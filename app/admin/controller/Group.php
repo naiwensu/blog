@@ -9,34 +9,36 @@ class Group extends Base
 	//修改用户所属组
 	public function changeusergroup()
 	{
+		$groups=db('group')->select();
 		$id=input('post.id');
 		$gid=input('post.gid');
 		$res=db('user')->where('id',$id)->update(['gid' => $gid]);
-
-
+		session('gid',$gid);
 		//扩展分页类查询
 		$res=Db::name('user')->select();
 		$rows=10;
 		$page = new Page(count($res), $rows);
 		$limit=$page->limit();
-		$list = Db::table('user')->limit($limit[0],$limit[1])->select();
+		$list = Db::table('user')->alias('u')->join('group g','u.gid=g.id')->field('u.id,u.username,u.password,u.gid,g.groupname,g.description')->where('g.id','>',1)->limit($limit[0],$limit[1])->select();
 		//return $this->display(var_dump($list));
+		$this->assign('groups',$groups);
 		$this->assign('fenye',$page->links());
 		$this->assign('allusers',$list);
 		return $this->fetch('group/getallgroupusers');
 	}
 
-
-	//获取所有用户
+	//获取所有用户(除超级管理员外)
 	public function getallgroupusers()
 	{
+		$groups=db('group')->select();
 		//扩展分页类查询
 		$res=Db::name('user')->select();
 		$rows=10;
 		$page = new Page(count($res), $rows);
 		$limit=$page->limit();
-		$list = Db::table('user')->limit($limit[0],$limit[1])->select();
+		$list = Db::table('user')->alias('u')->join('group g','u.gid=g.id')->field('u.id,u.username,u.password,u.gid,g.groupname,g.description')->where('g.id','>',1)->limit($limit[0],$limit[1])->select();
 		//return $this->display(var_dump($list));
+		$this->assign('groups',$groups);
 		$this->assign('fenye',$page->links());
 		$this->assign('allusers',$list);
 		return $this->fetch();
@@ -62,7 +64,8 @@ class Group extends Base
 	public function updateauthorization()
 	{
 		$id=input('get.id');
-		$this->assign('id',$id);
+		$data=db('group')->where('id',$id)->find();
+		$this->assign('group',$data);
 		return $this->fetch();
 	}
 	//更新用户组名、描述
@@ -72,7 +75,9 @@ class Group extends Base
 		$groupname=input('post.groupname');
 		$description=input('post.description');
 		if (!empty($groupname) && !empty($description)) {
+			db('user_role_priv')->where('gid',$id)->update(['groupname'=>$groupname]);
 			$res=db('group')->where('id',$id)->update(['groupname'=>$groupname,'description'=>$description]);
+
 		}else{
 			return $this->error('组名或租描述不能为空');
 		}
@@ -120,6 +125,7 @@ class Group extends Base
 	//权限分配
 	public function authorization()
 	{
+		$gid=input('get.gid');
 		$groupname=input('get.groupname');
 		$res=$this->all($groupname);
 		//return $this->display(var_dump($res));
@@ -131,6 +137,7 @@ class Group extends Base
 		$data="<table><tr><th>menu</th><th>quanxian</th></tr>".$data."</table>";
 		
 	*/
+		$this->assign('gid',$gid);
 		$this->assign('groupname',$groupname);
 		$this->assign('aut',$res);
 
@@ -152,8 +159,7 @@ class Group extends Base
 				$this->all($groupname,$id,$module_data,$spac);
 			}
 		}
-		return $module_data;
-		
+		return $module_data;		
 	}
 
 	//修改组权限
@@ -167,7 +173,7 @@ class Group extends Base
 					if (!$res) {
 						db('user_role_priv')->insert($value);
 					}else{
-						$res=db('user_role_priv')->where(['groupname'=>$value['groupname'],'module'=>$value['module'],'controller'=>$value['controller'],'method'=>$value['method']])->update(['statue'=>$value['statue']]);						
+						$res=db('user_role_priv')->where(['groupname'=>$value['groupname'],'module'=>$value['module'],'controller'=>$value['controller'],'method'=>$value['method']])->update(['statue'=>$value['statue'],'gid'=>$value['gid']]);				
 					}
 					
 				}		
@@ -183,6 +189,17 @@ class Group extends Base
 		return $this->fetch();
 	}
 
+	public function check()
+	{
+		$groupname=input('groupname');
+		$res=db('group')->where('groupname',$groupname)->find();
+		if ($res) {
+			echo "0";
+		}else{
+			echo "1";
+		}
+	}
+
 	public function doaddgroup()
 	{
 		$data=input('param.');
@@ -191,6 +208,7 @@ class Group extends Base
 		Db::transaction(function(){
 			$data=input('param.');
 			Db::table('group')->insert($data);
+			$gid = Db::name('user')->getLastInsID();
 			//添加权限（statue=0）
 			$res=Db::name('module_menu')->select();
 			foreach ($res as $key => $value) {
@@ -199,6 +217,7 @@ class Group extends Base
 				$list['method']=$value['method'];
 				$list['module']=$value['module'];
 				$list['statue']=0;
+				$list['gid']=$gid;
 				Db::name('user_role_priv')->insert($list);
 			}
 		});
@@ -228,5 +247,16 @@ class Group extends Base
 		    Db::rollback();
 		}
 		*/	
+	}
+
+	//删除组
+	public function deletegroup()
+	{
+		$groupname=input('get.groupname');
+		$res=db('group')->where('groupname',$groupname)->delete();
+		$result=db('user_role_priv')->where('groupname',$groupname)->delete();
+		if ($res) {
+			return $this->success('删除组成功');
+		}
 	}
 }

@@ -5,7 +5,7 @@
 		<div class="row clearfix">
 			<div class="col-sm-offset-1 col-sm-10 ">
 				用户名：{$vo.username}<br>
-				所属组：{$vo.gid}<br>
+				所属组：{$vo.groupname}<br>
 				<h3>修改所属组</h3>
 			</div>
 		</div>
@@ -18,9 +18,12 @@
 				<label for="confirmpassword" class=" col-sm-1 control-label" >组名</label>
 				    <div class="col-sm-3">
 					    <select class="form-control" name="gid">
-								<option value ="1">超级管理员</option>
-								<option value ="2">普通管理员</option>
-								<option value="3">普通用户</option>
+					    	{volist name="groups" id="vo"}
+					    		{if condition="($vo.id neq '1')"}
+					    			<option value ={$vo.id}>{$vo.groupname}</option>
+					    		{/if}
+					    		}
+					    	{/volist}
 					    </select>
 				    </div>
 				</div>

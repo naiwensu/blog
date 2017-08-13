@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\authorization.html";i:1502025109;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502095015;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\authorization.html";i:1502190434;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +64,7 @@
 			<div style="background: #BFBFBF">
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="__ROOT__/Index/index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				  	<li><a href="__ROOT__/Index/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
+				  	<li><a href="__ROOT__/User/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
 					<li data-toggle="collapse" data-target="#article" >
 							<a href="#"><span class="glyphicon glyphicon-book"></span>处理文章<b class="caret"></b></a>
 					</li>
@@ -81,13 +81,20 @@
 		                    <li><a href="getallusers"><span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 		                </ul>
 	            	</li>
--->	            	
+-->	
+					<li data-toggle="collapse" data-target="#tags" >
+							<a href="#"><span class="glyphicon glyphicon-tag"></span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签<b class="caret"></b></a>
+					</li>
+					<ul id="tags" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Tags/getalltags">&nbsp;&nbsp;<span class="glyphicon glyphicon-tags"></span>所有标签</a></li>
+						  	<li><a href="__ROOT__/Tags/addtags">&nbsp;&nbsp;<span class="glyphicon glyphicon-ok-circle"></span>添加标签</a></li>
+				  	</ul>            	
 					<li data-toggle="collapse" data-target="#ceshi" >
 							<a href="#"><span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b></a>
 					</li>
 					<ul id="ceshi" id="collapseThree" class="nav panel-collapse collapse">
-		                    <li><a href="__ROOT__/Index/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
-		                    <li><a href="__ROOT__/Index/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
+		                    <li><a href="__ROOT__/User/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
+		                    <li><a href="__ROOT__/User/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 					</ul>
 
 					<li data-toggle="collapse" data-target="#quanxian" >
@@ -138,6 +145,7 @@
 							<input type="hidden" name="role[<?php echo $key; ?>][controller]" value=<?php echo $vo['controller']; ?>>
 							<input type="hidden" name="role[<?php echo $key; ?>][method]" value=<?php echo $vo['method']; ?>>
 							<input type="hidden" name="role[<?php echo $key; ?>][groupname]" value=<?php echo $groupname; ?>>
+							<input type="hidden" name="role[<?php echo $key; ?>][gid]" value=<?php echo $gid; ?>>
 					<?php endforeach; endif; else: echo "" ;endif; ?>
 					
 			<div class="form-group">
@@ -152,17 +160,6 @@
 		</div>
 	</div>	
 </div>
-
-<script type="text/javascript">
-	$(function(){
-		if($("#statue").val()=='0'){
-			$("#statue").removeAttr("checked");
-		}
-		if($("#statue").attr('checked')=='undefined'){
-			$("#statue").attr('statue','0');
-		}
-	})
-</script>
 
 </body>
 

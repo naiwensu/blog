@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:73:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\getallgroupusers.html";i:1501841672;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502094078;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:73:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\getallgroupusers.html";i:1502175530;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,9 +64,9 @@
 			<div style="background: #BFBFBF">
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="__ROOT__/Index/index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				  	<li><a href="__ROOT__/Index/user"><span class="glyphicon glyphicon-user"></span>用户信息</a></li>
+				  	<li><a href="__ROOT__/User/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
 					<li data-toggle="collapse" data-target="#article" >
-							<a href="#"><span class="glyphicon glyphicon-pencil"></span>处理文章<b class="caret"></b></a>
+							<a href="#"><span class="glyphicon glyphicon-book"></span>处理文章<b class="caret"></b></a>
 					</li>
 					<ul id="article" class="nav panel-collapse collapse">
 						  	<li><a href="__ROOT__/Articles/publish">&nbsp;&nbsp;<span class="glyphicon glyphicon-upload"></span>发表文章</a></li>
@@ -81,13 +81,20 @@
 		                    <li><a href="getallusers"><span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 		                </ul>
 	            	</li>
--->	            	
+-->	
+					<li data-toggle="collapse" data-target="#tags" >
+							<a href="#"><span class="glyphicon glyphicon-tag"></span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签<b class="caret"></b></a>
+					</li>
+					<ul id="tags" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Tags/getalltags">&nbsp;&nbsp;<span class="glyphicon glyphicon-tags"></span>所有标签</a></li>
+						  	<li><a href="__ROOT__/Tags/addtags">&nbsp;&nbsp;<span class="glyphicon glyphicon-ok-circle"></span>添加标签</a></li>
+				  	</ul>            	
 					<li data-toggle="collapse" data-target="#ceshi" >
 							<a href="#"><span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b></a>
 					</li>
 					<ul id="ceshi" id="collapseThree" class="nav panel-collapse collapse">
-		                    <li><a href="__ROOT__/Index/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
-		                    <li><a href="__ROOT__/Index/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
+		                    <li><a href="__ROOT__/User/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
+		                    <li><a href="__ROOT__/User/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 					</ul>
 
 					<li data-toggle="collapse" data-target="#quanxian" >
@@ -116,7 +123,7 @@
 		<div class="row clearfix">
 			<div class="col-sm-offset-1 col-sm-10 ">
 				用户名：<?php echo $vo['username']; ?><br>
-				所属组：<?php echo $vo['gid']; ?><br>
+				所属组：<?php echo $vo['groupname']; ?><br>
 				<h3>修改所属组</h3>
 			</div>
 		</div>
@@ -129,9 +136,11 @@
 				<label for="confirmpassword" class=" col-sm-1 control-label" >组名</label>
 				    <div class="col-sm-3">
 					    <select class="form-control" name="gid">
-								<option value ="1">超级管理员</option>
-								<option value ="2">普通管理员</option>
-								<option value="3">普通用户</option>
+					    	<?php if(is_array($groups) || $groups instanceof \think\Collection || $groups instanceof \think\Paginator): $i = 0; $__LIST__ = $groups;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if(($vo['id'] != '1')): ?>
+					    			<option value =<?php echo $vo['id']; ?>><?php echo $vo['groupname']; ?></option>
+					    		<?php endif; ?>
+					    		}
+					    	<?php endforeach; endif; else: echo "" ;endif; ?>
 					    </select>
 				    </div>
 				</div>

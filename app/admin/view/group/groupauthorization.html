@@ -31,8 +31,8 @@
 							<td align="center">{$key}</td>
 							<td align="center">{$vo.groupname}</td>
 							<td align="center"><a href="__ROOT__/Group/updateauthorization?id={$vo.id}">修改</a></td>
-							<td align="center"><a href="__ROOT__/Group/authorization?groupname={$vo.groupname}">权限分配</a></td>
-							<td align="center"><a href="">删除</a></td>
+							<td align="center"><a href="__ROOT__/Group/authorization?gid={$vo.id}&groupname={$vo.groupname}">权限分配</a></td>
+							<td align="center"><a href="__ROOT__/Group/deletegroup?groupname={$vo.groupname}">删除</a></td>
 						</tr>
 						{/if}
 					{/volist}

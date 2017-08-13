@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\blog\public/../app/admin\view\articles\doedit.html";i:1502092699;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\blog\public/../app/admin\view\articles\doedit.html";i:1502160370;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,10 +44,9 @@
 				    <label for="confirmpassword" class=" col-sm-2 control-label" >标签</label>
 					    <div class="col-sm-2">
 						    <select class="form-control" name="tag">
-  								<option value ="css">CSS</option>
-			  					<option value ="HTML">HTML</option>
-			  					<option value="PHP">PHP</option>
-			 					<option value="MySQL">MySQL</option>
+						    	<?php if(is_array($tags) || $tags instanceof \think\Collection || $tags instanceof \think\Paginator): $i = 0; $__LIST__ = $tags;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+						    		<option value =<?php echo $vo['tag']; ?>><?php echo $vo['tag']; ?></option>
+						    	<?php endforeach; endif; else: echo "" ;endif; ?>
 						    </select>
 					    </div>
 				  </div>

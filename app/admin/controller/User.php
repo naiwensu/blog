@@ -5,16 +5,63 @@ use think\Controller;
 use think\Request;
 use think\Db;
 use fenye\Page;
-use app\admin\model\User;
+//use app\admin\model\User as Users;
+//use app\admin\model\User;
 use app\admin\model\Article;
 
-class Users extends Base{
+class User extends Base{
+	public function user()
+	{	
+		//$this->adminn=input('post.');
+		//return $this->display(var_dump(session('username')));
+		$this->assign('username',session('username'));
+		return $this->fetch('user/usermessage');
+	}
+
+	//修改用户密码，更新时间自动完成	
+	public function usermessage()
+	{	
+		//$res=db('user')->where(['username'=>session('username')])->find();
+		$this->assign('username',session('username'));
+		return $this->fetch();
+	}
+
+	public function changeuser()
+	{
+		$data=array();
+		$data['password']=md5(input('post.oldpassword'));
+		$data['username']=session('username');
+		$newpassword=md5(input('post.newpassword'));
+		$confirmpassword=md5(input('post.confirmpassword'));
+		$res=db('user')->where($data)->find();
+		if (!$res) {
+			return $this->error('原密码输入错误！');
+		}
+		if ($newpassword=="") {
+			return $this->error('新密码不能为空！');
+		}
+		if ($newpassword==$confirmpassword) {
+			$user=new \app\admin\model\User;
+			//$user->password=$newpassword;
+			$data=db('user')->where(['username'=>session('username')])->find();
+			$res=$user->save(['password'=>$newpassword],['id' => $data['id']]);
+			//$res=db('user')->where('username',session('username'))->update(['password' => $newpassword]);
+				if (!$res) {
+					return $this->error('修改密码失败！');
+				}
+				return $this->success('修改密码成功！','User/usermessage');
+		}
+		return $this->error('新密码与确认密码不匹配，请重新输入！');
+	}
+
 	//添加用户
 	public function adduser()
 	{
 		if (session('username')!='snw') {
 			return $this->error('你没有权限进行此操作！');
 		}
+		$data=db('group')->select();
+		$this->assign('group',$data);
 		return $this->fetch();
 	}
 
@@ -39,7 +86,7 @@ class Users extends Base{
 		//$data['password']=md5($password);
 		//$res=db('user')->insert($data);
 
-		$user=new User;
+		$user=new \app\admin\model\User;
 		$user->username=$username;
 		$user->password=md5($password);
 		$user->gid=$gid;
@@ -48,7 +95,7 @@ class Users extends Base{
 		if (!$res) {
 			return $this->error('添加用户失败！');
 		}
-		return $this->success('添加用户成功！','Users/adduser');
+		return $this->success('添加用户成功！','User/adduser');
 	}
 
 	public function check()
@@ -74,7 +121,7 @@ class Users extends Base{
 		//return $this->display(var_dump($list));
 		$this->assign('fenye',$page->links());
 		$this->assign('allusers',$list);
-		return $this->fetch('users/getallusers');
+		return $this->fetch('user/getallusers');
 
 /*
 		$data=Db::name('user')->paginate(2);
@@ -91,7 +138,7 @@ class Users extends Base{
 		db('article')->where('author',$username)->delete();
 		$res=db('user')->where('username',$username)->delete();
 		if ($res) {
-			return $this->success('删除成功','Users/getallusers');
+			return $this->success('删除成功','User/getallusers');
 		}
 			return $this->error('删除失败');
 

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\phpStudy\WWW\blog\public/../app/admin\view\User\usermessage.html";i:1502111843;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,27 +112,50 @@
 
 			<div style="margin-top: 20px;height: 500px;background: white" align="center">
 				<img src="__ROOT__/static/image/xq.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="110" style="margin-top: 30px"><br>
-				<h3>{$Think.session.username}<br><small>我的目标很明确！</small></h3><br>
+				<h3><?php echo \think\Session::get('username'); ?><br><small>我的目标很明确！</small></h3><br>
 				<a class="btn btn-default btn-xs" href="https://github.com/naiwensu" role="button"><img src="__ROOT__/static/image/github.png" class="img-.img-rounded" alt="github" width="30px" height="30px">github</a>
 			</div>
 		</div>
 
 		<div class="col-sm-9 column" style="background:#BFBFBF">
-		{block name="right"}			
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				 <a class="btn" href="#">View details »</a>
-			</p>		
-		{/block}
+		
+		<div class="col-sm-7 column" align="">
+
+			<form class="form-horizontal" style="background: #BFBFBF"  action="changeuser" method="post" role="form">
+					<label for="name" class="col-sm-offset-2"><h3>用户名：<?php echo $username; ?> &nbsp;&nbsp;注册时间：</h3></label><br>
+					<label for="name" class="col-sm-offset-2"><h3>修改密码</h3></label>
+				  <div class="form-group">
+				    <label for="password" class=" col-sm-2 control-label">原&nbsp;&nbsp;密&nbsp;&nbsp;码</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control" id="password" name="oldpassword" placeholder="请输入初始密码">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="newpassword" class=" col-sm-2 control-label">新&nbsp;&nbsp;密&nbsp;&nbsp;码</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="newpassword" name="newpassword" placeholder="请输入新密码">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="confirmpassword" class=" col-sm-2 control-label">确认密码</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="请输入确认密码">
+				    </div>
+				  </div>									 
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-primary">提交</button>
+				    </div>
+				  </div>
+		  
+			</form>
+		</div>
+
+
 		</div>
 	</div>	
 </div>
-{block name="js"}{/block}
+
 </body>
 
 <footer style="height: 50px;background:#DFDFDF ;bottom: 0px;text-align: center;padding-top: 15px">

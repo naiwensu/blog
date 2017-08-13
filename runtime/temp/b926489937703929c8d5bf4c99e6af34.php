@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\nouserarticle.html";i:1501135636;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502107087;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\nouserarticle.html";i:1501135636;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502109821;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +64,7 @@
 			<div style="background: #BFBFBF">
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="__ROOT__/Index/index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				  	<li><a href="__ROOT__/Index/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
+				  	<li><a href="__ROOT__/Users/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
 					<li data-toggle="collapse" data-target="#article" >
 							<a href="#"><span class="glyphicon glyphicon-book"></span>处理文章<b class="caret"></b></a>
 					</li>

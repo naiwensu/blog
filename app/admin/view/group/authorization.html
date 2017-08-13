@@ -27,6 +27,7 @@
 							<input type="hidden" name="role[{$key}][controller]" value={$vo.controller}>
 							<input type="hidden" name="role[{$key}][method]" value={$vo.method}>
 							<input type="hidden" name="role[{$key}][groupname]" value={$groupname}>
+							<input type="hidden" name="role[{$key}][gid]" value={$gid}>
 					{/volist}
 					
 			<div class="form-group">
@@ -37,16 +38,4 @@
 		</form>
 	</div>
 
-{/block}
-{block name="js"}
-<script type="text/javascript">
-	$(function(){
-		if($("#statue").val()=='0'){
-			$("#statue").removeAttr("checked");
-		}
-		if($("#statue").attr('checked')=='undefined'){
-			$("#statue").attr('statue','0');
-		}
-	})
-</script>
 {/block}
