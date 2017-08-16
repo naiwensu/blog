@@ -1,8 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1502197078;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1502197078;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1502623375;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>苏乃文的博客</title>
+	<link rel="shortcut icon" href="__ROOT__/static/image/blog1.ico"/>
 	<style>
 		.all{
 			position:relative;
@@ -110,7 +111,7 @@
 		<div class="tit">
 			<ul>
 				<a href="index" ><li>首页</li></a>
-				<a href="tags"><li>标签</li></a>
+				<a href="tags"><li>标签11</li></a>
 				<a href="about"><li>关于</li></a>
 			</ul>
 		</div>

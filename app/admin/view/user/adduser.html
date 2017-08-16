@@ -58,7 +58,7 @@
 						$('#username1').remove();
 						var username=$(this).val();
 						$.get('__ROOT__/User/check',{'username':username},function(data){
-							if(data=='不允许'){
+							if(data=='0'){
 									$("#submit").attr("disabled","disabled");
 
 									if(!$("#umessage").length>0){

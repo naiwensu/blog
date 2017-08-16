@@ -103,9 +103,9 @@ class User extends Base{
 		$username=input('username');
 		$res=db('user')->where('username',$username)->find();
 		if($res){
-			echo  "不允许";
+			echo  "0";
 		}else{
-			echo "允许";
+			echo "1";
 		}
 	}
 

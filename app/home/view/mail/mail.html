@@ -1,0 +1,11 @@
+{extend name="index/common" /}
+{block name="right"}
+	<form method='post' action='__ROOT__/mail/sendMail'>
+		Email: <input name='email' type='text'><br>
+		Subject: <input name='subject' type='text'><br>
+		Message:<br>
+		<textarea name='message' rows='15' cols='40'>
+		</textarea><br>
+		<input type='submit'>
+	</form>"
+{/block}
