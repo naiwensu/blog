@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/index.html";i:1504855141;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504851097;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/index.html";i:1504971357;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -141,15 +141,16 @@
 		
 		<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<div>
-				<h3 align="center"><?php echo $vo['title']; ?></h3>
-				<h4 align="center"><img src="__ROOT__/static/image/tag1.png" class="img-.img-rounded" alt="github" width="18px" height="18px"><small> <?php echo $vo['tag']; ?> | <img src="__ROOT__/static/image/time.png" class="img-.img-rounded" alt="github" width="16px" height="16px"> 20<?php echo date("y-m-d h:m:s",$vo['create_time']); ?></small></h4>
-				<p style="color: text-align: left;font-size: 15px"><?php echo substr($vo['content'],0,6); ?>...  ...</p>
+				<p style="color: ;text-align: left;font-size: 20px">标题：<?php echo $vo['title']; ?></p>
+				<p style="color: ;text-align: left;font-size: 10px">标签：<?php echo $vo['tag']; ?></p>
+				<p style="color: text-align: left;font-size: 15px">内容：<?php echo substr($vo['content'],0,6); ?>...  ...</p>
 				<p><a href="__ROOT__/articles/article?id=<?php echo $vo['id']; ?>">阅读全文</a></p>
-				<p>阅读(<?php echo $vo['rnum']; ?>)&nbsp;&nbsp;&nbsp;评论(<?php echo $vo['cnum']; ?>)&nbsp;&nbsp;&nbsp;收藏(<?php echo $vo['cnum']; ?>)&nbsp;&nbsp;&nbsp;举报</p>
+				<p>20<?php echo date("y-m-d h:m:s",$vo['create_time']); ?>&nbsp;&nbsp;&nbsp; <?php echo $vo['rnum']; ?>人阅读&nbsp;&nbsp;&nbsp;<a href="__ROOT__/Comment/comment?title=<?php echo $vo['title']; ?>">评论(<?php echo $vo['cnum']; ?>)</a>&nbsp;&nbsp;&nbsp;收藏&nbsp;&nbsp;&nbsp;举报</p>
 				<hr>
 			</div>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		<?php echo $fenye; ?>
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 
 		<hr />
 			<footer style="height: 40px;background:;bottom: 0px;text-align: center;padding-top: 15px">

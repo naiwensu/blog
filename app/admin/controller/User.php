@@ -5,6 +5,7 @@ use think\Controller;
 use think\Request;
 use think\Db;
 use fenye\Page;
+//use app\admin\model\User as Users;
 //use app\admin\model\User;
 use app\admin\model\Article;
 
@@ -14,11 +15,6 @@ class User extends Base{
 		//$this->adminn=input('post.');
 		//return $this->display(var_dump(session('username')));
 		$this->assign('username',session('username'));
-		$create_time=db('user')->where('username',session('username'))->field('create_time')->find();
-		$timestamp=$create_time['create_time'];
-		$create_time=date('Y-m-d H:m:s',$timestamp);
-		//var_dump($create_time);exit;
-		$this->assign('create_time',$create_time);
 		return $this->fetch('user/usermessage');
 	}
 
@@ -107,9 +103,9 @@ class User extends Base{
 		$username=input('username');
 		$res=db('user')->where('username',$username)->find();
 		if($res){
-			echo  "不允许";
+			echo  "0";
 		}else{
-			echo "允许";
+			echo "1";
 		}
 	}
 

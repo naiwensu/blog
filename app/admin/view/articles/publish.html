@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -56,4 +57,64 @@
 				    </div>
 				  </div>	  
 			</form>
+=======
+{extend name="index/common" /}
+
+{block name="right"}
+			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Articles/add" method="post" role="form">
+				  <div class="form-group">
+				    <label for="title" class=" col-sm-2 control-label">文章标题</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control" id="title" name="title" placeholder="请输入文章标题">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="content" class=" col-sm-2 control-label" >文章内容</label>
+				    <div class="col-sm-9">
+
+					    <script type="text/javascript" src="__ROOT__/static/ueditor/ueditor.config.js"></script>
+					    <!-- 编辑器源码文件 -->
+					    <script type="text/javascript" src="__ROOT__/static/ueditor/ueditor.all.js"></script>
+					    <!-- 实例化编辑器 -->
+					    <script type="text/javascript">
+					        var editor = UE.getEditor('container',{ toolbars: [
+													        [
+													            'fullscreen', 'source', '|', 'undo', 'redo', '|',
+													            'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+													            'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+													            'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+													            'directionalityltr', 'directionalityrtl', 'indent', '|',
+													            'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+													            'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+													            'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+													            'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+													            'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+													            'print', 'preview', 'searchreplace', 'drafts', 'help'
+													        ]
+													    ],
+					        							initialFrameWidth:500
+        												,initialFrameHeight:320 })
+					    </script>
+					    <script id="container" name="content" type="text/plain" ></script>
+
+				      	<!--<textarea class="form-control" rows="4" name="content" placeholder="请输入文章内容"></textarea>-->
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="confirmpassword" class=" col-sm-2 control-label" >标签</label>
+					    <div class="col-sm-3">
+						    <select class="form-control" name="tag">
+						    	{volist name="tags" id="vo"}
+						    		<option value ={$vo.tag}>{$vo.tag}</option>
+						    	{/volist}
+						    </select>
+					    </div>
+				  </div>									 
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-primary">提交</button>
+				    </div>
+				  </div>	  
+			</form>
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

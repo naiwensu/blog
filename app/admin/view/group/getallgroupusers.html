@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -36,4 +37,44 @@
 	</div>	
 	{/volist}
 	{$fenye}
+=======
+{extend name="index/common" /}
+
+{block name="right"}
+		{volist name="allusers" id="vo"}
+		<div class="row clearfix">
+			<div class="col-sm-offset-1 col-sm-10 ">
+				用户名：{$vo.username}<br>
+				所属组：{$vo.groupname}<br>
+				<h3>修改所属组</h3>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Group/changeusergroup" method="post" role="form">	
+				<div class="form-group">
+				<input type="hidden" name="id" value="{$vo.id}">
+				</div>	 
+				<div class="form-group">
+				<label for="confirmpassword" class=" col-sm-1 control-label" >组名</label>
+				    <div class="col-sm-3">
+					    <select class="form-control" name="gid">
+					    	{volist name="groups" id="vo"}
+					    		{if condition="($vo.id neq '1')"}
+					    			<option value ={$vo.id}>{$vo.groupname}</option>
+					    		{/if}
+					    		}
+					    	{/volist}
+					    </select>
+				    </div>
+				</div>
+				<div class="form-group">
+				<div class="col-sm-offset-1 col-sm-10">
+				  <button type="submit" id="submit" class="btn btn-primary">提交</button>
+				</div>
+				</div>
+			</form>
+		</div>	
+		{/volist}
+		{$fenye}
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

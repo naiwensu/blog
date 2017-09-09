@@ -113,5 +113,4 @@ class Articles extends Base{
 		$this->assign('article',$list);
 		return $this->fetch('tags/tagarticle');
 	}
-
 }

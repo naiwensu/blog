@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"/home/wwwroot/default/blog/blog/public/../app/home/view/tags/tagarticle.html";i:1504324667;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504851097;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"/home/wwwroot/default/blog/blog/public/../app/home/view/tags/tagarticle.html";i:1504971357;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -150,6 +150,7 @@
 			</div>
 		<?php endforeach; endif; else: echo "" ;endif; ?>
 		<?php echo $fenye; ?>
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 
 		<hr />
 			<footer style="height: 40px;background:;bottom: 0px;text-align: center;padding-top: 15px">

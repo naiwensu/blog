@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -12,4 +13,20 @@
 			</div>
 
 		{/volist}
+=======
+{extend name="index/common" /}
+
+{block name="right"}
+		{volist name="article" id="vo"}
+			<div>
+				<p style="color: ">标题：{$vo.title}</p>
+				<p style="color: ">内容：{$vo.content}</p>
+				<p>作者：{$vo.author}</p>
+				<p>发表时间：20{$vo.create_time|date="y-m-d",###}</p>
+				<p><a href="__ROOT__/Articles/deltagarticles?id={$vo.id}&tag={$vo.tag}">删除</a></p>
+				<hr>
+			</div>
+
+		{/volist}
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

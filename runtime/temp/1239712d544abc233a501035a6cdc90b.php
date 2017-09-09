@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/mycollection.html";i:1504950548;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504851097;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/mycollection.html";i:1504950548;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/default/blog/blog/public/../app/home/view/login/register.html";i:1504348245;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/default/blog/blog/public/../app/home/view/login/register.html";i:1504974117;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>

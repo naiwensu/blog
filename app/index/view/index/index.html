@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {include file="index/common"}
 	<div align="center">
 	{volist name="article" id="vo"}
@@ -15,4 +16,23 @@
 	</div>
 </div>
 </body>
+=======
+{include file="index/common"}
+	<div align="center">
+	{volist name="article" id="vo"}
+		<div>
+			<p style="color: red">{$vo.title}</p><br/>
+			<p style="color: red">{$vo.create_time}</p><br/>
+			<p style="color: blue">{$vo.content}</p><br/>
+			阅读全文<br>
+		</div>
+
+	{/volist}
+	</div>
+	<div class="footer">
+			{include file="public/footer" /}
+	</div>
+</div>
+</body>
+>>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 </html>
