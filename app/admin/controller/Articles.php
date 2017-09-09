@@ -57,6 +57,9 @@ class Articles extends Base{
 	//发表(添加)文章
 	public function publish()
 	{
+		$data=db('tags')->select();
+		//return $this->display(var_dump($data));
+		$this->assign('tags',$data);
 		return $this->fetch();
 	}
 
@@ -92,14 +95,17 @@ class Articles extends Base{
 		$data=$this->getArticle();
 		$this->assign('article',$data);
 		//return $this->display(var_dump($data));
-		return $this->fetch('Articles/edit');
+		return $this->fetch('articles/edit');
 	}
 
 	//编辑页面
 	public function doedit()
 	{
+		$tags=db('tags')->select();
+		//return $this->display(var_dump($data));
 		$data=Db::table('article')->where('id',input('get.id'))->find();
 		//return $this->display(var_dump($data));
+		$this->assign('tags',$tags);
 		$this->assign('article',$data);
 		return $this->fetch();
 	}
@@ -156,14 +162,13 @@ class Articles extends Base{
 		$list = Db::table('article')->where('uid',session('userid'))->limit($limit[0],2)->select();
 		//return $this->display(var_dump($list));
 		if(!$list){
-					return $this->fetch("index/nouserarticle");
+					return $this->fetch("articles/nouserarticle");
 		}
 		$this->assign('fenye',$page->links());
 		$this->assign('userarticle', $list);
 		return $this->fetch();
 		//简单分页（只有‘上一页’，‘下一页’）
 		//$page->simpleLinks();
-		
 		
 /*
 		//自带分页类
@@ -194,8 +199,8 @@ class Articles extends Base{
 	public function deletearticle()
 	{
 
-		$title=input('get.title');
-		$res=db('article')->where('title',$title)->delete();
+		$id=input('get.id');
+		$res=db('article')->where('id',$id)->delete();
 		if ($res) {
 			return $this->success('删除成功');
 		}
@@ -207,6 +212,25 @@ class Articles extends Base{
 	protected function getArticle()
 	{
 		return $article=db('article')->select();
+	}
+
+	//获取tag标签文章
+	public function tagarticles()
+	{
+		$tag=input('get.tag');
+		$data=db('article')->where('tag',$tag)->select();
+		$this->assign('article',$data);
+		return $this->fetch('tags/tagarticle');
+	}
+
+	public function deltagarticles()
+	{
+		$id=input('get.id');
+		db('article')->where('id',$id)->delete();
+		$tag=input('get.tag');
+		$data=db('article')->where('tag',$tag)->select();
+		$this->assign('article',$data);
+		return $this->fetch('tags/tagarticle');
 	}
 
 }

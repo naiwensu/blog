@@ -1,0 +1,14 @@
+{extend name="index/common" /}
+
+{block name="right"}
+	<h1 align="center">所有标签</h1>
+	<div align='center'>
+
+		{volist name="tags" id="vo" key='k' mod='3'}
+			{eq name="mod" value="1"}<span style="font-size: 20px;color: red">{/eq}	
+			<a style="color:black;text-decoration:underline;" href="__ROOT__/Articles/tagarticles?tag={$vo.tag}"/>{$vo.tag}</a>
+			{eq name="mod" value="1"}</span>{/eq}&nbsp;&nbsp;	
+			{eq name="mod" value="2"}<br/>{/eq}			
+		{/volist}
+			</div>
+{/block}

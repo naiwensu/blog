@@ -7,28 +7,26 @@
 		</div>	
 	</div>
 	<div class="row clearfix">
-
-		<form class="form-horizontal" style="background: #BFBFBF"  action="updaterole" method="post" role="form">			
-					<span class="col-sm-offset-1 col-sm-2"><h3>#</h3></span><span class="col-sm-7"><h3>用户组</h3></span><span class="col-sm-2"><h3>权限</h3></span><br>			
-		
-					{volist name="$aut" id="vo"}		
-							<span class="col-sm-offset-1 col-sm-2">{$key}</span>
-							<span class="col-sm-7"><a>{$vo.menu_name}</a></span>
-							<!--<input type="hidden" name="role[{$key}][statue]" value=0>
-							<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value={$vo.statue} checked /></span>-->
-							{if condition="$vo.statue=='1'"}
-							<input type="hidden" name="role[{$key}][statue]" value=0>
-							<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value=1 checked /></span><br>
-							{else/}
-							<input type="hidden" name="role[{$key}][statue]" value=0>
-							<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value=1/></span><br>
-							{/if}								
-							<input type="hidden" name="role[{$key}][module]" value={$vo.module}>
-							<input type="hidden" name="role[{$key}][controller]" value={$vo.controller}>
-							<input type="hidden" name="role[{$key}][method]" value={$vo.method}>
-							<input type="hidden" name="role[{$key}][groupname]" value={$groupname}>
-					{/volist}
-					
+		<form class="form-horizontal" style="background: #f5f5f5"  action="__ROOT__/Group/updaterole" method="post" role="form">			
+			<span class="col-sm-offset-1 col-sm-2"><h3>#</h3></span><span class="col-sm-7"><h3>用户组</h3></span><span class="col-sm-2"><h3>权限</h3></span><br>			
+			{volist name="$aut" id="vo"}		
+				<span class="col-sm-offset-1 col-sm-2">{$key}</span>
+				<span class="col-sm-7"><a>{$vo.menu_name}</a></span>
+				<!--<input type="hidden" name="role[{$key}][statue]" value=0>
+				<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value={$vo.statue} checked /></span>-->
+				{if condition="$vo.statue=='1'"}
+				<input type="hidden" name="role[{$key}][statue]" value=0>
+				<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value=1 checked /></span><br>
+				{else/}
+				<input type="hidden" name="role[{$key}][statue]" value=0>
+				<span class="col-sm-2"><input type='checkbox' id="statue" name='role[{$key}][statue]' value=1/></span><br>
+				{/if}								
+				<input type="hidden" name="role[{$key}][module]" value={$vo.module}>
+				<input type="hidden" name="role[{$key}][controller]" value={$vo.controller}>
+				<input type="hidden" name="role[{$key}][method]" value={$vo.method}>
+				<input type="hidden" name="role[{$key}][groupname]" value={$groupname}>
+				<input type="hidden" name="role[{$key}][gid]" value={$gid}>
+			{/volist}					
 			<div class="form-group">
 			    <div class="col-sm-offset-1 col-sm-10">
 			      &nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" id="submit" class="btn btn-primary">提交</button>
@@ -36,17 +34,4 @@
 			</div>
 		</form>
 	</div>
-
-{/block}
-{block name="js"}
-<script type="text/javascript">
-	$(function(){
-		if($("#statue").val()=='0'){
-			$("#statue").removeAttr("checked");
-		}
-		if($("#statue").attr('checked')=='undefined'){
-			$("#statue").attr('statue','0');
-		}
-	})
-</script>
 {/block}

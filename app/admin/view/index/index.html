@@ -5,8 +5,9 @@
 			<div>
 				<p style="color: ">标题：{$vo.title}</p>
 				<p style="color: ">内容：{$vo.content}</p>
+                <p style="color: ">id：{$vo.id}</p>
 				<p>发表时间：20{$vo.create_time|date="y-m-d",###}</p>
-				<p><a href="deletearticle?title={$vo.title}">删除</a></p>
+				<p><a href="__ROOT__/Articles/deletearticle?id={$vo.id}">删除</a></p>
 				<hr>
 			</div>
 

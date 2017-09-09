@@ -1,0 +1,14 @@
+{extend name="index/common" /}
+{block name="right"}
+		{volist name="collection" id="vo"}
+			<div>
+				<h3 align="center">{$vo.title}</h3>
+				<h4 align="center"><img src="__ROOT__/static/image/tag1.png" class="img-.img-rounded" alt="github" width="18px" height="18px"><small> {$vo.tag} | <img src="__ROOT__/static/image/time.png" class="img-.img-rounded" alt="github" width="16px" height="16px"> 20{$vo.create_time|date="y-m-d h:m:s",###}</small></h4>
+				<p style="color: text-align: left;font-size: 15px">{$vo.content|substr=0,6}...  ...</p>
+				<p><a href="__ROOT__/articles/article?id={$vo.id}">阅读全文</a></p>
+				<p>阅读({$vo.rnum})&nbsp;&nbsp;&nbsp;评论({$vo.cnum})&nbsp;&nbsp;&nbsp;收藏({$vo.cnum})&nbsp;&nbsp;&nbsp;举报</p>
+				<hr>
+			</div>
+		{/volist}
+		{$fenye}
+{/block}

@@ -43,10 +43,9 @@
 				    <label for="confirmpassword" class=" col-sm-2 control-label" >标签</label>
 					    <div class="col-sm-2">
 						    <select class="form-control" name="tag">
-  								<option value ="css">CSS</option>
-			  					<option value ="HTML">HTML</option>
-			  					<option value="PHP">PHP</option>
-			 					<option value="MySQL">MySQL</option>
+						    	{volist name="tags" id="vo"}
+						    		<option value ={$vo.tag}>{$vo.tag}</option>
+						    	{/volist}
 						    </select>
 					    </div>
 				  </div>

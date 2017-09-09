@@ -56,11 +56,11 @@ return [
     // +----------------------------------------------------------------------
 
     // 默认模块名
-    'default_module'         => 'index',
+    'default_module'         => 'admin',
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'Index',
+    'default_controller'     => 'index',
     // 默认操作名
     'default_action'         => 'index',
     // 默认验证器
@@ -82,6 +82,8 @@ return [
     'pathinfo_fetch'         => ['ORIG_PATH_INFO', 'REDIRECT_PATH_INFO', 'REDIRECT_URL'],
     // pathinfo分隔符
     'pathinfo_depr'          => '/',
+    //url模式2：
+    'URL_MODEL'              =>2,
     // URL伪静态后缀
     'url_html_suffix'        => 'html',
     // URL普通方式参数 用于自动生成
@@ -141,7 +143,9 @@ return [
     // 视图输出字符串内容替换
     'view_replace_str'       => [],
     // 默认跳转页面对应的模板文件
-    'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
+    'dispatch_success_tmpl' => 'public/success',
+    //'dispatch_error_tmpl' => 'public/error',
+    //'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     '__PUBLIC__' => '/public',
 
@@ -210,6 +214,10 @@ return [
         'type'           => '',
         // 是否自动开启 SESSION
         'auto_start'     => true,
+        //session过期时间
+        'expire'         => 24*60*60,
+        //是否使用cookie
+        'use_cookies'    => true,
     ],
 
     // +----------------------------------------------------------------------

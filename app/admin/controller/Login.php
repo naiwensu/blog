@@ -45,6 +45,7 @@ class Login extends Base
 			if(md5($admin['password'])==$user['password']){
 					session('username',$user['username']);
 					session('id',$user['id']);
+					session('gid',$user['gid']);
 					//return $this->display(session('username'));
 					$this->success('登录成功', 'Index/index');
 			}else{

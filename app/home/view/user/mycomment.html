@@ -1,0 +1,26 @@
+{extend name="index/common" /}
+{block name="right"}
+	{volist name='comment' id='vo'}		
+			{if condition="$vo.headimage neq ''"}
+			<image style='width: 60px;height: 60px;float: left' src="__ROOT__/static/headimage/{$vo.headimage}" alt='头像' />
+			{else/}
+			<image style='width: 60px;height: 60px;float: left' src="__ROOT__/static/default/0.jpg" alt='头像' />
+			{/if}
+			<div style='height: 60px;'>
+				<div style='position: relative;top: 30%'>
+					<b>&nbsp;&nbsp;{$vo.username}	</b><br>	
+					<small>&nbsp;&nbsp;发表于{$vo.c_create_time|date='Y-m-d',###}</small><br>
+				</div>
+			</div>
+		评论内容：{$vo.c_content}<br>
+		<p><a href="__ROOT__/comment/delcomment?id={$vo.c_id}">删除</a></p>
+		<div style="background: #EAECEE;padding:15px">
+		<h4>文章标题：{$vo.title}</h4><br>
+		文章内容：&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content|trim|substr=0,6}... ...<br>		
+		发表于 {$vo.create_time|date='Y-m-d',###} |
+		评论({$vo.cnum}) |
+		读数({$vo.rnum})<br>
+		</div>
+	{/volist}
+	{$fenye}
+{/block}

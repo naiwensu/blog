@@ -1,0 +1,451 @@
+[ 2017-08-14T10:25:00+08:00 ] 45.76.170.105 112.10.171.131 GET /Index/index
+[ log ] www.sunaiwen.com/Index/index [运行时间：0.036406s][吞吐率：27.47req/s] [内存消耗：3,243.96kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/Tags/getalltags',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000252s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T10:25:24+08:00 ] 45.76.170.105 112.10.171.131 GET /
+[ log ] www.sunaiwen.com/ [运行时间：0.033151s][吞吐率：30.17req/s] [内存消耗：3,243.34kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001486s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T11:18:35+08:00 ] 45.76.170.105 112.10.171.239 GET /Index/index
+[ log ] www.sunaiwen.com/Index/index [运行时间：0.037072s][吞吐率：26.97req/s] [内存消耗：3,243.71kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/Tags/getalltags',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000296s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T11:18:39+08:00 ] 45.76.170.105 112.10.171.239 GET /
+[ log ] www.sunaiwen.com/ [运行时间：0.027096s][吞吐率：36.91req/s] [内存消耗：3,243.29kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000193s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T11:18:45+08:00 ] 45.76.170.105 112.10.171.239 GET /User/user
+[ log ] www.sunaiwen.com/User/user [运行时间：0.021498s][吞吐率：46.52req/s] [内存消耗：2,378.92kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ /home/wwwroot/default/blog/blog/app/admin/controller/User.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/user/usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-14T17:06:37+08:00 ] 45.76.170.105 112.10.171.239 GET /User/user
+[ log ] www.sunaiwen.com/User/user [运行时间：0.027958s][吞吐率：35.77req/s] [内存消耗：2,378.98kb] [文件加载：52]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->user[ /home/wwwroot/default/blog/blog/app/admin/controller/User.php ]
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/user/usermessage.html [ array (
+  0 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-14T17:06:38+08:00 ] 45.76.170.105 112.10.171.239 GET /Index/index
+[ log ] www.sunaiwen.com/Index/index [运行时间：0.030076s][吞吐率：33.25req/s] [内存消耗：3,243.88kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/User/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000971s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000291s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T17:06:40+08:00 ] 45.76.170.105 112.10.171.239 GET /Articles/publish
+[ log ] www.sunaiwen.com/Articles/publish [运行时间：0.045380s][吞吐率：22.04req/s] [内存消耗：3,266.59kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Articles',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articles->publish[ /home/wwwroot/default/blog/blog/app/admin/controller/Articles.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/articles/publish.html [ array (
+  0 => 'tags',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001149s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tags` [ RunTime:0.001805s ]
+[ sql ] [ SQL ] SELECT * FROM `tags` [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T17:06:46+08:00 ] 45.76.170.105 112.10.171.239 GET /User/adduser
+[ log ] www.sunaiwen.com/User/adduser [运行时间：0.042613s][吞吐率：23.47req/s] [内存消耗：3,245.72kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'adduser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.sunaiwen.com/Articles/publish',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->adduser[ /home/wwwroot/default/blog/blog/app/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/user/adduser.html [ array (
+  0 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `group` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `group` [ RunTime:0.000168s ]
+
+---------------------------------------------------------------
+[ 2017-08-14T19:25:50+08:00 ] 45.76.170.105 112.10.171.239 GET /
+[ log ] www.sunaiwen.com/ [运行时间：0.042330s][吞吐率：23.62req/s] [内存消耗：3,243.34kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/default/blog/blog/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sunaiwen.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ldf58bqb226l084ihsv315gsf2; thinkphp_show_page_trace=0|0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/default/blog/blog/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/default/blog/blog/public/../app/admin/view/index/index.html [ array (
+  0 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000916s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001515s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY create_time desc [ RunTime:0.000273s ]
+
+---------------------------------------------------------------

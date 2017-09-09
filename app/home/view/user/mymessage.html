@@ -1,0 +1,7 @@
+{extend name="index/common" /}
+{block name="right"}
+	<h4><image src="__ROOT__/static/image/username.png" style="width:23px;height: 23px" />&nbsp;&nbsp;<a href="__ROOT__/user/mymessages">{$user.username}</a></h4>
+	<h4><a href="__ROOT__/user/mycollection?id={$user.id}"><image src="__ROOT__/static/image/collect.png" style="width:23px;height: 23px" />&nbsp;&nbsp;我的收藏</a></h4>
+	<h4><a href="__ROOT__/user/mycomment?id={$user.id}"><image src="__ROOT__/static/image/comment.png" style="width:23px;height: 23px" />&nbsp;&nbsp;我的评论</a></h4>	
+	<h4><image src="__ROOT__/static/image/setting.png" style="width:23px;height: 23px" />&nbsp;&nbsp;<a href="__ROOT__/user/setting">编辑资料</a></h4>	
+{/block}

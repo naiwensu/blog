@@ -1,36 +1,39 @@
 {extend name="index/common" /}
 
 {block name="right"}
-		{volist name="allusers" id="vo"}
-		<div class="row clearfix">
-			<div class="col-sm-offset-1 col-sm-10 ">
-				用户名：{$vo.username}<br>
-				所属组：{$vo.gid}<br>
-				<h3>修改所属组</h3>
-			</div>
+	{volist name="allusers" id="vo"}
+	<div class="row clearfix">
+		<div class="col-sm-offset-1 col-sm-10 ">
+			用户名：{$vo.username}<br>
+			所属组：{$vo.groupname}<br>
 		</div>
-		<div class="row clearfix">
-			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Group/changeusergroup" method="post" role="form">	
-				<div class="form-group">
+	</div>
+	<div class="row clearfix">
+		<form class="form-horizontal" style="background: #f5f5f5"  action="__ROOT__/Group/changeusergroup" method="post" role="form">	
+			<div class="form-group">
 				<input type="hidden" name="id" value="{$vo.id}">
-				</div>	 
-				<div class="form-group">
-				<label for="confirmpassword" class=" col-sm-1 control-label" >组名</label>
-				    <div class="col-sm-3">
-					    <select class="form-control" name="gid">
-								<option value ="1">超级管理员</option>
-								<option value ="2">普通管理员</option>
-								<option value="3">普通用户</option>
-					    </select>
-				    </div>
-				</div>
-				<div class="form-group">
+			</div>	 
+			<div class="form-group">
+				<label for="confirmpassword" class=" col-sm-1 control-label" >修改组</label>
+			    <div class="col-sm-3">
+				    <select class="form-control" name="gid">
+				    	{volist name="groups" id="vo"}
+				    		{if condition="($vo.id neq '1')"}
+				    			<option value ={$vo.id}>{$vo.groupname}</option>
+				    		{/if}
+				    		}
+				    	{/volist}
+				    </select>
+			    </div>
+			</div>
+			<div class="form-group">
 				<div class="col-sm-offset-1 col-sm-10">
 				  <button type="submit" id="submit" class="btn btn-primary">提交</button>
 				</div>
-				</div>
-			</form>
-		</div>	
-		{/volist}
-		{$fenye}
+				<hr>
+			</div>
+		</form>
+	</div>	
+	{/volist}
+	{$fenye}
 {/block}

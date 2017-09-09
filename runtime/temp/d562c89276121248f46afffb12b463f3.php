@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\updatesuperauthorization.html";i:1502074976;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1501920527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\phpStudy\WWW\blog\public/../app/admin\view\group\updatesuperauthorization.html";i:1502074976;s:63:"D:\phpStudy\WWW\blog\public/../app/admin\view\index\common.html";i:1502114506;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,10 +63,15 @@
 		<div class="col-sm-3 column" style="background: black">
 			<div style="background: #BFBFBF">
 				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a href="index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				  	<li><a href="__ROOT__/Index/user"><span class="glyphicon glyphicon-user"></span>用户信息</a></li>
-				  	<li><a href="__ROOT__/Index/publish"><span class="glyphicon glyphicon-upload"></span>发表文章</a></li>
-				  	<li><a href="__ROOT__/Index/edit"><span class="glyphicon glyphicon-edit"></span>编辑文章</a></li>
+					<li class="active"><a href="__ROOT__/Index/index"><span class="glyphicon glyphicon-home"></span>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+				  	<li><a href="__ROOT__/User/user"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
+					<li data-toggle="collapse" data-target="#article" >
+							<a href="#"><span class="glyphicon glyphicon-book"></span>处理文章<b class="caret"></b></a>
+					</li>
+					<ul id="article" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Articles/publish">&nbsp;&nbsp;<span class="glyphicon glyphicon-upload"></span>发表文章</a></li>
+						  	<li><a href="__ROOT__/Articles/edit">&nbsp;&nbsp;<span class="glyphicon glyphicon-edit"></span>编辑文章</a></li>
+				  	</ul>
 <!--					<li class="dropdown">
 		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		                    <span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b>
@@ -76,13 +81,20 @@
 		                    <li><a href="getallusers"><span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 		                </ul>
 	            	</li>
--->	            	
+-->	
+					<li data-toggle="collapse" data-target="#tags" >
+							<a href="#"><span class="glyphicon glyphicon-tag"></span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签<b class="caret"></b></a>
+					</li>
+					<ul id="tags" class="nav panel-collapse collapse">
+						  	<li><a href="__ROOT__/Tags/getalltags">&nbsp;&nbsp;<span class="glyphicon glyphicon-tags"></span>所有标签</a></li>
+						  	<li><a href="__ROOT__/Tags/addtags">&nbsp;&nbsp;<span class="glyphicon glyphicon-ok-circle"></span>添加标签</a></li>
+				  	</ul>            	
 					<li data-toggle="collapse" data-target="#ceshi" >
 							<a href="#"><span class="glyphicon glyphicon-pencil"></span>编辑用户 <b class="caret"></b></a>
 					</li>
 					<ul id="ceshi" id="collapseThree" class="nav panel-collapse collapse">
-		                    <li><a href="__ROOT__/Index/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
-		                    <li><a href="__ROOT__/Index/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
+		                    <li><a href="__ROOT__/User/adduser">&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span> 添加用户</a></li>
+		                    <li><a href="__ROOT__/User/getallusers">&nbsp;&nbsp;<span class="glyphicon glyphicon-trash"></span> 删除用户</a></li>
 					</ul>
 
 					<li data-toggle="collapse" data-target="#quanxian" >

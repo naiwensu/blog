@@ -3,21 +3,53 @@
 {block name="right"}
 			<form class="form-horizontal" style="background: #BFBFBF"  action="doaddgroup" method="post" role="form">
 				  <div class="form-group">
-				    <label for="title" class=" col-sm-2 control-label">用户组名</label>
+				    <label for="groupname" class=" col-sm-2 control-label">用户组名</label>
 				    <div class="col-sm-6">
 				      <input type="text" class="form-control" id="groupname" name="groupname" placeholder="请输入用户组名">
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="content" class=" col-sm-2 control-label" >用户组描述</label>
+				    <label for="description" class=" col-sm-2 control-label" >用户组描述</label>
 				    <div class="col-sm-6">
 				      	<textarea class="form-control" rows="4" name="description" placeholder="请输入用户组描述"></textarea>
 				    </div>
 				  </div>				  								 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn btn-primary">提交</button>
+				      <button type="submit" id="submit" disabled="disabled" class="btn btn-primary">提交</button>
 				    </div>
 				  </div>	  
 			</form>
+{/block}
+{block name="js"}
+	<script>
+			$(function(){
+				$("#groupname").blur(function(){
+					if(! $("#groupname").val().length>0 ){
+						if(!$("#groupname1").length>0){
+							$('#gmessage').remove();
+							$("#groupname").after('<p id="groupname1" style="color:red">请输入用户组名！</p>');
+						}
+						$("#submit").attr("disabled","disabled");	
+						//alert('aaa');																		
+					}else{
+						$('#groupname1').remove();
+						var groupname=$(this).val();
+						$.get('__ROOT__/Group/check',{'groupname':groupname},function(data){
+							if(data=='0'){
+									$("#submit").attr("disabled","disabled");
+									if(!$("#gmessage").length>0){
+										$("#groupname").after('<p id="gmessage" style="color:red">该用户组已经存在</p>');
+									}
+							}else{
+								$('#gmessage').remove();
+								$("#submit").removeAttr("disabled");
+							//alert('aaa');							
+							}
+						});
+					}			
+				});
+
+		});		
+	</script>
 {/block}

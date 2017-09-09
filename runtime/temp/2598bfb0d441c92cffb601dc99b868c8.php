@@ -1,6 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1501311067;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
-
-	<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"D:\phpStudy\WWW\blog\public/../app/index\view\index\index.html";i:1502197078;s:63:"D:\phpStudy\WWW\blog\public/../app/index\view\index\common.html";i:1500443857;s:64:"D:\phpStudy\WWW\blog\public/../app/index\view\public\footer.html";i:1500281710;}*/ ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>苏乃文的博客</title>
