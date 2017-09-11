@@ -35,7 +35,10 @@ class User extends Base{
 	public function mycomment()
 	{
 		$res=db('blog_user')->alias('b')->where('b.id',session('id'))->join('comment c','b.id=c.uid')->join('article a','c.aid=a.id')->field('b.username,b.headimage,a.title,a.content,a.create_time,a.cnum,a.rnum,c.id as c_id,c.content as c_content,c.create_time as c_create_time')->order('c_create_time desc')->select();
-		//var_dump($res);
+		//var_dump(count($res));exit;
+		if (!count($res)) {
+			return $this->fetch('user/nomycomment');
+		}
 		$rows = 4;//每页显示数据量
 		$page = new Page(count($res), $rows);
 		$limit = $page->limit();
@@ -77,20 +80,24 @@ class User extends Base{
 	{
 		$id=input('get.id');
 		$res=db('blog_user')->where('id',$id)->field('collection')->find();
-			$data=explode(',',$res['collection']);
-			$arr=array();
-			foreach($data as $key=>$value){
-				$arr[$key]=db('article')->where('id',$value)->find();
-			}
-			$rows = 4;//每页显示数据量
-			$page = new Page(count($arr), $rows);
-			$limit = $page->limit();
-			$offset = $limit[0];
-			$arr=array_slice($arr,$offset,$rows);
-			$this->assign('collection',$arr);
-			$this->assign('fenye',$page->links());
-			//var_dump($arr);
-			return $this->fetch();
+		$data=explode(',',$res['collection']);
+		//var_dump($data);exit;
+		if ($data['0']=='') {
+			return $this->fetch('user/nomycollection');
+		}
+		$arr=array();
+		foreach($data as $key=>$value){
+			$arr[$key]=db('article')->where('id',$value)->find();
+		}
+		$rows = 4;//每页显示数据量
+		$page = new Page(count($arr), $rows);
+		$limit = $page->limit();
+		$offset = $limit[0];
+		$arr=array_slice($arr,$offset,$rows);
+		$this->assign('collection',$arr);
+		$this->assign('fenye',$page->links());
+		//var_dump($arr);
+		return $this->fetch();
 	}
 
 	//账号管理，用户信息设置
@@ -173,6 +180,28 @@ class User extends Base{
 	//修改用户信息
 	public function changeusermessage()
 	{
+		header("Content-type: text/html; charset=utf-8"); 
+		$user=input('post.');
+		if (isset($user['area'])) {
+			$user['address']=$user['province'].$user['city'].$user['area'];
+			unset($user['area']);
+		}else{
+			$user['address']=$user['province'].$user['city'];
+		}
+		unset($user['province']);
+		unset($user['city']);
+		$data=array_filter($user);
+		$data['sex']=$user['sex'];
+		$data['update_time']=time();
+		//var_dump($data);exit;
+		$res=db('blog_user')->where('id',session('id'))->update($data);
+		if ($res) {
+			if (isset($data['username'])) {
+				session('username',$data['username']);
+			}
 		return $this->success('修改用户信息成功！');
+		}
+		return $this->error('用户信息未改变！');
 	}
+
 }

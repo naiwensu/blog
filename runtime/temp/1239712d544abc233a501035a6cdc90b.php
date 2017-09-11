@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/mycollection.html";i:1504950548;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/mycollection.html";i:1504950548;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1505032361;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +73,7 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">首页</a></li>
+		        <li class="active"><a href="__ROOT__/index/index">首页</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 		      	<?php if(session('username') != ''): ?>
@@ -153,7 +153,7 @@
 
 		<hr />
 			<footer style="height: 40px;background:;bottom: 0px;text-align: center;padding-top: 15px">
-				<span id="time"></span><span style="color:red;"><span class="glyphicon glyphicon-heart" ></span></span>乃文|<a href="__ROOT__/mail/mail">给我留言</a>
+				<span id="time"></span><span style="color:red;"><span class="glyphicon glyphicon-heart" ></span></span>乃文|<a href="__ROOT__/message/message">给我留言</a>
 			</footer>
 		</div>
 	</div>	

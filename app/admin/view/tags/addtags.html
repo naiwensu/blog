@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -52,58 +51,4 @@
 				
 		});		
 	</script>
-=======
-{extend name="index/common" /}
-
-{block name="right"}
-			<form class="form-horizontal" style="background: #BFBFBF"  action="__ROOT__/Tags/doaddtags" method="post" role="form">
-				  <div class="form-group">
-				    <label for="tagname" class=" col-sm-2 control-label">标签名</label>
-				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="tagname" name="tagname" placeholder="请输入标签名">
-				    </div>
-				  </div>				  								 
-				  <div class="form-group">
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" id="submit" disabled="disabled" class="btn btn-primary">提交</button>
-				    </div>
-				  </div>	  
-			</form>
-{/block}
-
-{block name="js"}
-	<script>
-			$(function(){
-				$("#tagname").blur(function(){
-					if(! $("#tagname").val().length>0 ){
-						if(!$("#tagname1").length>0){
-							if ($('#tmessage').length>0) {
-								$('#tmessage').remove();
-							}
-							$("#tagname").after('<p id="tagname1" style="color:red">请输入标签名！</p>');
-						}
-						$("#submit").attr("disabled","disabled");	
-						//alert('aaa');																		
-					}else{
-						$('#tagname1').remove();
-						var tagname=$(this).val();
-						$.get('__ROOT__/Tags/check',{'tagname':tagname},function(data){
-							if(data=='0'){
-									$("#submit").attr("disabled","disabled");
-
-									if(!$("#tmessage").length>0){
-										$("#tagname").after('<p id="tmessage" style="color:red">该标签已存在</p>');
-									}
-							}else{
-								$('#tmessage').remove();
-								$('#submit').removeAttr('disabled');
-							//alert('aaa');							
-							}
-						});
-					}			
-				});
-					
-		});		
-	</script>
->>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

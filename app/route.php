@@ -10,6 +10,7 @@ use think\Route;
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 Route::domain('www.sunaiwen.com','home');
+Route::domain('www.my.com','admin');
 return [
     '__pattern__' => [
         'name' => '\w+',

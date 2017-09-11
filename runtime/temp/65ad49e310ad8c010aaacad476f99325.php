@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/default/blog/blog/public/../app/home/view/public/success.html";i:1504328446;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"/home/wwwroot/default/blog/blog/public/../app/home/view/public/success.html";i:1505030529;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -18,7 +18,7 @@
 <body>
     <div class="system-message">
         <?php switch ($code) {case 1:?>
-            <h1>:)</h1>
+            <h1 style="color: blue">ʕ⊙ᴥ⊙ʔ</h1>
             <p class="success"><?php echo(strip_tags($msg));?></p>
             <?php break;case 0:?>
             <h1>:(</h1>

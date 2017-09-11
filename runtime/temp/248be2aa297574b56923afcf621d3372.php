@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/setting.html";i:1504968987;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/user/setting.html";i:1505029437;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1505032361;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +73,7 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">首页</a></li>
+		        <li class="active"><a href="__ROOT__/index/index">首页</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 		      	<?php if(session('username') != ''): ?>
@@ -142,7 +142,7 @@
 	<h4>编辑资料</h4>
 	<h4>修改头像</h4>
 	<a data-toggle="modal" href="#changeheadimage">
-	<image style='width: 80px;height: 80px;' src=<?php echo $headimage; ?> onclick="changeheadimage()" alt='tupian' />
+	<image style='width: 80px;height: 80px;' src=<?php echo $headimage; ?> onclick="changeheadimage()" alt='添加头像' />
 	</a>
 	<h4><a data-toggle="modal" href="#changeusername">修改用户信息</a></h4>
 <!-- 模态框（Modal） -->
@@ -150,7 +150,7 @@
 
 		<hr />
 			<footer style="height: 40px;background:;bottom: 0px;text-align: center;padding-top: 15px">
-				<span id="time"></span><span style="color:red;"><span class="glyphicon glyphicon-heart" ></span></span>乃文|<a href="__ROOT__/mail/mail">给我留言</a>
+				<span id="time"></span><span style="color:red;"><span class="glyphicon glyphicon-heart" ></span></span>乃文|<a href="__ROOT__/message/message">给我留言</a>
 			</footer>
 		</div>
 	</div>	
@@ -189,7 +189,7 @@
 						<div class="form-group">
 						    <label for="username" class="col-sm-3 control-label">姓名</label>
 						    <div class="col-sm-9">
-						     	<input type="text" class="form-control" id="username" name="useranme" placeholder="请输入新的昵称">
+						     	<input type="text" class="form-control" id="username" name="username" placeholder="请输入新的昵称">
 						    </div>
 						</div>
 

@@ -90,7 +90,7 @@ class Login extends Base
 		$data=['username'=>$username,'password'=>$password];
 		$res=db('blog_user')->insert($data);
 		if($res){
-			return $this->success('注册成功！');
+			return $this->success('注册成功！','login/login');
 		}else{
 			return $this->error('注册失败！');
 		}

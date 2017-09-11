@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {extend name="index/common" /}
 {block name="right"}
 		{volist name="article" id="vo"}
@@ -12,19 +11,4 @@
 			</div>
 		{/volist}
 		{$fenye}
-=======
-{extend name="index/common" /}
-{block name="right"}
-		{volist name="article" id="vo"}
-			<div>
-				<p style="color: ;text-align: left;font-size: 20px">标题：{$vo.title}</p>
-				<p style="color: ;text-align: left;font-size: 10px">标签：{$vo.tag}</p>
-				<p style="color: text-align: left;font-size: 15px">内容：{$vo.content|substr=0,6}...  ...</p>
-				<p><a href="__ROOT__/articles/article?id={$vo.id}">阅读全文</a></p>
-				<p>20{$vo.create_time|date="y-m-d h:m:s",###}&nbsp;&nbsp;&nbsp; {$vo.rnum}人阅读&nbsp;&nbsp;&nbsp;<a href="__ROOT__/Comment/comment?title={$vo.title}">评论({$vo.cnum})</a>&nbsp;&nbsp;&nbsp;收藏&nbsp;&nbsp;&nbsp;举报</p>
-				<hr>
-			</div>
-		{/volist}
-		{$fenye}
->>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

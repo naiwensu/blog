@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"/home/wwwroot/default/blog/blog/public/../app/home/view/mail/mail.html";i:1504973947;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"/home/wwwroot/default/blog/blog/public/../app/home/view/mail/mail.html";i:1505020971;s:73:"/home/wwwroot/default/blog/blog/public/../app/home/view/index/common.html";i:1504973238;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,38 +139,41 @@
 
 		<div  class="col-sm-9 col-sm-offset-3 column sidebar"  style="background:;height: ;  overflow-y:scroll;">
 		
-	<form method='post' enctype="multipart/form-data" action='__ROOT__/mail/sendMail'>
-		标题: <input name='title' type='text'><br>		
-		内容:<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name='message' rows='10' cols='40'>
-		</textarea><br>
-		添加附件: 
-		<input type="file" name="myfile" onchange="fileChange(this);"><br>
-		<input id="submit" type='submit' >
-		<script type="text/javascript">
-        var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
-        function fileChange(target){
-            var fileSize = 0;
-            if (isIE && !target.files) {    // IE浏览器
-                var filePath = target.value; // 获得上传文件的绝对路径
-                var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
-                // GetFile(path) 方法从磁盘获取一个文件并返回。
-                var file = fileSystem.GetFile(filePath);
-                fileSize = file.Size;    // 文件大小，单位：b
-            }
-            else {    // 非IE浏览器
-                fileSize = target.files[0].size;
-            }
-            var size = fileSize / 1024 / 1024;
-            if (size > 1) {
-                alert("附件不能大于1M");
-                $('#submit').attr("disabled","disabled"); 
-            }else{
-            	$('#submit').removeAttr("disabled"); 
-            }
-        }
-        </script>
-	</form>
+<form class="form-horizontal" method='post' enctype="multipart/form-data" action='__ROOT__/mail/sendMail'>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <label for="title">标题</label>    
+                <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                <p id="havetitle" style="color: red"></p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <label for="content">内容</label>
+                <textarea id="content" name="message" class="form-control col-xs-6" rows="3"></textarea>
+                <p id="havecontent" style="color: red"></p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <label for="myfile">添加附件</label>
+                <input type="file" id="myfile" name="myfile" onchange="fileChange(this);">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <button type="submit" id="submit" disabled="disabled" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</form>
 
 		<hr />
 			<footer style="height: 40px;background:;bottom: 0px;text-align: center;padding-top: 15px">
@@ -180,6 +183,71 @@
 	</div>	
 </div>
 
+
+<script type="text/javascript">
+    var check = new Array();
+    check['file'] = 1;
+    $(document).ready(function(){
+        $('#title').blur(function(){
+            if ($('#title').val()=='') {
+                check['title'] = 0;
+                $('#submit').attr("disabled","disabled");
+                if ($('#havetitle').text() == '') {
+                    $('#havetitle').text('*请输入标题！');                  
+                }
+            }else{
+                check['title'] = 1;
+                $('#havetitle').empty();
+            }
+            if(check['title'] == 1 && check['content'] == 1 && check['file'] == 1){
+                $('#submit').removeAttr("disabled"); 
+            }
+        });
+
+        $('#content').blur(function(){
+            if ($('#content').val() == '') {
+                check['content'] = 0;
+                $('#submit').attr("disabled","disabled");
+                if ($('#havecontent').text() =='') {
+                    $('#havecontent').text('*请输入内容！');                  
+                }
+            }else{
+                check['content'] = 1;
+                $('#havecontent').empty();
+            }
+            if(check['title'] == 1 && check['content'] && check['file'] == 1){
+                $('#submit').removeAttr("disabled"); 
+            }
+        });
+    });
+
+    var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+    function fileChange(target){
+        var fileSize = 0;
+        if (isIE && !target.files) {    // IE浏览器
+            var filePath = target.value; // 获得上传文件的绝对路径
+            var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
+            // GetFile(path) 方法从磁盘获取一个文件并返回。
+            var file = fileSystem.GetFile(filePath);
+            fileSize = file.Size;    // 文件大小，单位：b
+        }
+        else {    // 非IE浏览器
+            fileSize = target.files[0].size;
+        }
+        var size = fileSize / 1024 / 1024;
+        if (size > 1) {
+            alert("附件不能大于1M");
+            check['file'] = 0;
+            $('#submit').attr("disabled","disabled"); 
+        }else{
+            check['file'] = 1;
+            if(check['title'] == 1 && check['content']==1 && check['file'] == 1){
+                $('#submit').removeAttr("disabled"); 
+            }
+            //$('#submit').removeAttr("disabled"); 
+        }
+    }
+</script>
 
 </body>
 </html>

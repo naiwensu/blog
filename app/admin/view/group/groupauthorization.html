@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -9,82 +8,35 @@
 	</div>
 	<div class="row clearfix">
 		<div class="col-sm-offset-1 col-sm-10 ">
-
-			<table class="table table-bordered"  >
-				  <caption><h1>用户组管理列表</h1></caption>
-				  <thead>
-				    <tr>
-				      <th>组id</th>
-				      <th>组名</th>
-				      <th colspan="3">操作</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-					{volist name="groups" id="vo" key="key"}
-						{if condition="$vo.id=='1'"}
-						<tr>
-							<td align="center">{$key}</td>
-							<td align="center">{$vo.groupname}</td>
-							<td colspan="3" align="center"><a href="__ROOT__/Group/updatesuperauthorization?id={$vo.id}">修改</a></td>
-						</tr>
-						{else/}			
-						<tr>
-							<td align="center">{$key}</td>
-							<td align="center">{$vo.groupname}</td>
-							<td align="center"><a href="__ROOT__/Group/updateauthorization?id={$vo.id}">修改</a></td>
-							<td align="center"><a href="__ROOT__/Group/authorization?gid={$vo.id}&groupname={$vo.groupname}">权限分配</a></td>
-							<td align="center"><a href="__ROOT__/Group/deletegroup?groupname={$vo.groupname}">删除</a></td>
-						</tr>
-						{/if}
-					{/volist}
-				  </tbody>
-				</table>
-			
+		<table class="table table-bordered"  >
+			  <caption><h1>用户组管理列表</h1></caption>
+			  <thead>
+			    <tr>
+			      <th>组id</th>
+			      <th>组名</th>
+			      <th colspan="3">操作</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+				{volist name="groups" id="vo" key="key"}
+					{if condition="$vo.id=='1'"}
+					<tr>
+						<td align="center">{$key}</td>
+						<td align="center">{$vo.groupname}</td>
+						<td colspan="3" align="center"><a href="__ROOT__/Group/updatesuperauthorization?id={$vo.id}">修改</a></td>
+					</tr>
+					{else/}			
+					<tr>
+						<td align="center">{$key}</td>
+						<td align="center">{$vo.groupname}</td>
+						<td align="center"><a href="__ROOT__/Group/updateauthorization?id={$vo.id}">修改</a></td>
+						<td align="center"><a href="__ROOT__/Group/authorization?gid={$vo.id}&groupname={$vo.groupname}">权限分配</a></td>
+						<td align="center"><a href="__ROOT__/Group/deletegroup?groupname={$vo.groupname}">删除</a></td>
+					</tr>
+					{/if}
+				{/volist}
+			  </tbody>
+			</table>			
 		</div>
 	</div>
-=======
-{extend name="index/common" /}
-
-{block name="right"}
-	<div class="row clearfix">
-		<div class="col-sm-offset-10 col-sm-2 ">
-			<a class="btn" href="__ROOT__/Group/addgroup"><span class="glyphicon glyphicon-plus"></span> 添加组</a>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-sm-offset-1 col-sm-10 ">
-
-			<table class="table table-bordered"  >
-				  <caption><h1>用户组管理列表</h1></caption>
-				  <thead>
-				    <tr>
-				      <th>组id</th>
-				      <th>组名</th>
-				      <th colspan="3">操作</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-					{volist name="groups" id="vo" key="key"}
-						{if condition="$vo.id=='1'"}
-						<tr>
-							<td align="center">{$key}</td>
-							<td align="center">{$vo.groupname}</td>
-							<td colspan="3" align="center"><a href="__ROOT__/Group/updatesuperauthorization?id={$vo.id}">修改</a></td>
-						</tr>
-						{else/}			
-						<tr>
-							<td align="center">{$key}</td>
-							<td align="center">{$vo.groupname}</td>
-							<td align="center"><a href="__ROOT__/Group/updateauthorization?id={$vo.id}">修改</a></td>
-							<td align="center"><a href="__ROOT__/Group/authorization?gid={$vo.id}&groupname={$vo.groupname}">权限分配</a></td>
-							<td align="center"><a href="__ROOT__/Group/deletegroup?groupname={$vo.groupname}">删除</a></td>
-						</tr>
-						{/if}
-					{/volist}
-				  </tbody>
-				</table>
-			
-		</div>
-	</div>
->>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

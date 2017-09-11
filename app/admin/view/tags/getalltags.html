@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {extend name="index/common" /}
 
 {block name="right"}
@@ -6,13 +5,4 @@
 		{volist name="tags" id="vo"}
 			<a href="__ROOT__/Articles/tagarticles?tag={$vo.tag}"/>{$vo.tag}</a><br>			
 		{/volist}
-=======
-{extend name="index/common" /}
-
-{block name="right"}
-	<h1 align="center">所有标签</h1>
-		{volist name="tags" id="vo"}
-			<a href="__ROOT__/Articles/tagarticles?tag={$vo.tag}"/>{$vo.tag}</a><br>			
-		{/volist}
->>>>>>> eb1c85eb6aec921952158591ccb8b7335130ffbe
 {/block}

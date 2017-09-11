@@ -6,11 +6,24 @@ use think\Db;
 
 class Index extends Controller
 {
+	private $allArticles;
+
     public function index()
     {
-    	$data=db('article')->order('create_time desc')->select();
+    	//连接redis，首页文章缓存10s刷新一次
+    	$redis = new \Redis();
+   		$redis->connect('127.0.0.1', 6379);
+    	//var_dump(json_decode($redis->get('name'),true));exit;
+    	$allArticles=$redis->get('allarticles');
+    	if (!$allArticles) {
+    		$allArticles=db('article')->order('create_time desc')->select();
+    		$redis->set('allarticles',json_encode($allArticles),10);
+    		$allArticles=$redis->get('allarticles');
+    	}   	
+    	$allArticles=json_decode($allArticles,true);
+    	//$data=db('article')->order('create_time desc')->select();
         $rows = 4;//每页显示数据量
-        $page = new Page(count($data), $rows);
+        $page = new Page(count($allArticles), $rows);
         $limit=$page->limit();
         $list = Db::table('article')->limit($limit[0],4)->select();
         if(!$list){

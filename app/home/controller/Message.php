@@ -6,14 +6,14 @@ use think\Controller;
 /**
 * 
 */
-class Mail extends Controller
+class message extends Controller
 {	
-	public function mail()
+	public function message()
 	{
 		return $this->fetch();
 	}
 
-	public function sendMail()
+	public function sendMessage()
 	{
 		header("Content-type: text/html; charset=utf-8"); 
 		$size=1024*1024;

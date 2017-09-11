@@ -15,6 +15,8 @@ class User extends Base{
 		//$this->adminn=input('post.');
 		//return $this->display(var_dump(session('username')));
 		$this->assign('username',session('username'));
+		$create_time=db('user')->where('id',session('id'))->field('create_time')->find();
+		$this->assign('create_time',$create_time['create_time']);
 		return $this->fetch('user/usermessage');
 	}
 
